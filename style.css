@@ -145,13 +145,17 @@ color: #187b6f;
 
 .home-leftRight-container{
     /* border: 2px solid red; */
+    /* padding: 100px 100px; */
     padding: 10% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #D9D9D9;
     /* background-color: rgb(238, 238, 238); */
+
+    box-sizing: border-box;
 }
+
 .home-leftRight-container .left {
     height: 500px;
     /* border: 1px solid black; */
@@ -172,6 +176,7 @@ color: #187b6f;
    
 }
 .home-leftRight-container .right{
+    position: relative;
     /* border: 2px solid red; */
     width: 500px;
     height: 700px;
@@ -222,8 +227,7 @@ color: #187b6f;
     flex-direction: column;
     align-items: center;
     height: 65%;
-    margin-top: -15%;
-    
+    margin-top: -15%;   
 }
 .inputContainer{
     width: 85%;
@@ -236,7 +240,7 @@ color: #187b6f;
 .right #botao{
     height: 60px;
     position: absolute;
-    top: 65%;
+    top: 82%;
     width: 200px;
     background-color: #edb865;
     border-radius: 10px;
@@ -245,22 +249,86 @@ color: #187b6f;
     font-weight: 800;
     font-size: 1.3rem;
 }
- .right #botao:hover {
+.right #botao:hover {
      background-color: #be8c3c;
     color: rgb(255, 255, 255);
+    cursor: pointer;
  }
 
 
 /* -- END HOME -- */
+/* -- SOLUCOES -- */
+
 #solucoes{
     /* border: 2px solid cyan; */
-    height: 400px;
+    /* height: 767px; */
         background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-
+    display: flex;
+    padding: 5% 10%;  
 }
 
+.solucoes-left{
+    /* border: 1px solid white; */
+    height: 90%;
+    margin-right: 5%;
+}
+.solucoes-left h1 {
+    font-size: 3.5rem;
+    margin-top: 50px;
+    margin-bottom: 15%;
+;
+    color: #187b6f;
+}
+.solucoes-left li{
+    color: D9D9D9;
+    max-width: 700px;
+    margin-top: 45px;
+    font-size: 1.5rem;
+    margin-left: -20px;
+}
+.solucoes-leftRight-container{
+    /* padding: 0% 10%; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.solucoes-right {
+    /* border: 1px solid red; */
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+}
+.imagem-sombra{
+    position: relative;
+
+}
+.img-shadow{
+   
+    height: 380px;
+    top: 175px;
+    left: 60px;
+    width: 560px;
+    position: absolute;
+    background-color: #be8c3c;
+    border-radius:25px;
+}
+.solucoes-right img{
+    width: 600px;
+    margin-top: 120px;
+    border-radius: 25px;
+    position: relative;
+}
+/* -- FIM SOLUCOES -- */
 /* -- END MAIN -- */
 @media screen and (max-width: 1700px) {
+    
+    /* -- MAIN -- */
+    /* -- HOME -- */
+
 .home-leftRight-container .left {
         width: 650px;
     }
@@ -294,13 +362,54 @@ color: #187b6f;
         }
         .right #botao {
             height: 60px;     
-            top: 64%;
+            top: 83%;
             width: 200px;     
             font-size: 1.3rem;
         
             }
+        /* -- FIM HOME -- */
+        
+        /* -- SOLUCOES -- */
+.solucoes-left li {
+    color: D9D9D9;
+    max-width: 700px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+    .solucoes-left h1 {
+        font-size: 3.1rem;
+    }
+        
+    .solucoes-left li {
+        font-size: 1.3rem;
+    }
+    .img-shadow {
+
+        height: 320px;
+        top: 100px;
+        left: 58px;
+        width: 460px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
+
+    .solucoes-right img {
+        width: 500px;
+        margin-top: 60px;
+        border-radius: 25px;
+        position: relative;
+    }
+        /* -- FIM SOLUCOES -- */
+        
+        
+        
+        /* -- FIM MAIN -- */
     }
 @media screen and (max-width: 1550px) {
+    /* -- MAIN -- */
+    /* -- HOME -- */
+
     .home-leftRight-container .left {
             width: 600px;
         }
@@ -338,14 +447,45 @@ color: #187b6f;
         }
         .right #botao {
             height: 60px;
-            top: 63%;
+            top: 83%;
             width: 200px;
             font-size: 1.3rem;
-        
          }
+           /* -- FIM MAIN -- */
+           /* -- SOLUCOES -- */
+ .solucoes-left h1 {
+     font-size: 2.8rem;
+ }
+
+ .solucoes-left li {
+     font-size: 1.1rem;
+ }
+
+ .img-shadow {
+
+     height: 280px;
+     top: 45px;
+     left: 50px;
+     width: 420px;
+     position: absolute;
+     background-color: #be8c3c;
+     border-radius: 25px;
+ }
+
+ .solucoes-right img {
+     width: 450px;
+     margin-top: 0px;
+     border-radius: 25px;
+     position: relative;
+ }
+           /* -- FIM SOLUCOES -- */
+           /* -- FIM HOME -- */
 }
 
 @media screen and (max-width: 1450px) {
+    /* -- MAIN -- */
+    /* -- HOME -- */
+
     .home-leftRight-container .left {
             width: 550px;
         }
@@ -380,6 +520,8 @@ color: #187b6f;
             font-size: 1rem;
     
         }
+         /* -- FIM MAIN -- */
+         /* -- FIM HOME -- */
 }
 
 @media screen and (max-width: 1250px){
@@ -421,6 +563,7 @@ color: #187b6f;
 .home-leftRight-container {
     /* border: 2px solid red; */
     padding: 10% 8%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -435,6 +578,35 @@ color: #187b6f;
 
 
  /* -- FIM HOME -- */
+ /* -- SOLUCOES -- */
+
+ .solucoes-left h1 {
+     font-size: 2.6rem;
+ }
+
+ .solucoes-left li {
+     font-size: 1rem;
+ }
+
+ .img-shadow {
+
+     height: 250px;
+     top: 45px;
+     left: 60px;
+     width: 360px;
+     position: absolute;
+     background-color: #be8c3c;
+     border-radius: 25px;
+ }
+
+ .solucoes-right img {
+     width: 400px;
+     margin-top: 0px;
+     border-radius: 25px;
+     position: relative;
+ }
+
+ /* -- FIM SOLUCOES -- */
  /* -- FIM MAIN -- */
 }
 
@@ -516,14 +688,109 @@ color: #187b6f;
  }
   .right #botao {
       height: 50px;
-      top: 63%;
+      top: 84%;
       width: 150px;
       font-size: 1.3rem;
   }
 
     /* -- FIM HOME -- */
+ /* -- SOLUCOES -- */
+#solucoes {
+    /* border: 2px solid cyan; */
+    /* height: 767px; */
+    background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    padding: 5% 5%;
+}
+.solucoes-left {
+
+    margin-right: 2%;
+}
+ .solucoes-left h1 {
+     font-size: 2.4rem;
+ }
+
+ .solucoes-left li {
+     font-size: 1rem;
+     margin-top: 20px;
+ }
+
+ .img-shadow {
+
+     height: 210px;
+     top: 45px;
+     left: 65px;
+     width: 300px;
+     position: absolute;
+     background-color: #be8c3c;
+     border-radius: 25px;
+ }
+
+ .solucoes-right img {
+     width: 350px;
+     margin-top: 0px;
+     border-radius: 25px;
+     position: relative;
+ }
+        
+                /* -- FIM SOLUCOES -- */
     /* -- FIM MAIN -- */
 
+}
+@media screen and (max-width: 840px) {
+
+    /* -- SOLUCOES -- */
+#solucoes {
+        /* border: 2px solid cyan; */
+        /* height: 767px; */
+        background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+        display: flex;
+        padding: 10% 5%;
+    }
+.solucoes-leftRight-container {
+        /* padding: 0% 10%; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+ .img-shadow {
+
+     height: 330px;
+     top: 72px;
+     left: 70px;
+     width: 500px;
+     position: absolute;
+     background-color: #be8c3c;
+     border-radius: 25px;
+ }
+
+ .solucoes-right img {
+     width: 550px;
+     margin-top: 0px;
+     border-radius: 25px;
+     position: relative;
+ }
+.solucoes-left {
+margin-top: 10%;
+margin-right: 0%;
+}
+
+.solucoes-left h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.solucoes-left li {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+        
+    
+        /* -- FIM SOLUCOES -- */
 }
 @media screen and (max-width: 760px) {
     /* -- MAIN --*/
@@ -540,7 +807,7 @@ color: #187b6f;
     }
     .right #botao {
         height: 40px;
-        top: 62.5%;
+        top: 85.5%;
         width: 100px;
         font-size: 1rem;
     
@@ -556,6 +823,60 @@ color: #187b6f;
         font-size: 2.2rem;
     }
     /* -- FIM HOME -- */
+   /* -- SOLUCOES -- */
+   #solucoes {
+       /* border: 2px solid cyan; */
+       /* height: 767px; */
+       background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+       display: flex;
+       padding: 10% 5%;
+   }
+   .solucoes-leftRight-container {
+       /* padding: 0% 10%; */
+       height: 100%;
+       width: 100%;
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .img-shadow {
+
+       height: 300px;
+       top: 66px;
+       left: 70px;
+       width: 450px;
+       position: absolute;
+       background-color: #be8c3c;
+       border-radius: 25px;
+   }
+
+   .solucoes-right img {
+       width: 500px;
+       margin-top: 0px;
+       border-radius: 25px;
+       position: relative;
+   }
+
+   .solucoes-left {
+       margin-top: 10%;
+       margin-right: 0%;
+   }
+
+   .solucoes-left h1 {
+       font-size: 3rem;
+       text-align: center;
+       margin-bottom: 30px;
+   }
+
+   .solucoes-left li {
+       font-size: 1.2rem;
+       margin-top: 20px;
+   }
+
+
+   /* -- FIM SOLUCOES -- */
     /* -- FIM MAIN -- */
 }
 @media screen and (max-width: 700px) {
@@ -606,7 +927,7 @@ color: #187b6f;
         .right #botao {
             height: 60px;
             position: absolute;
-            top: 70.5%;
+            top: 81.5%;
             width: 200px;
             background-color: #edb865;
             border-radius: 10px;
@@ -624,13 +945,62 @@ color: #187b6f;
    
 
     /* -- FIM HOME -- */
+   /* -- SOLUCOES -- */
+   .solucoes-leftRight-container {
+       /* padding: 0% 10%; */
+       height: 100%;
+       width: 100%;
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .img-shadow {
+
+       height: 260px;
+       top: 66px;
+       left: 70px;
+       width: 400px;
+       position: absolute;
+       background-color: #be8c3c;
+       border-radius: 25px;
+   }
+
+   .solucoes-right img {
+       width: 450px;
+       margin-top: 0px;
+       border-radius: 25px;
+       position: relative;
+   }
+
+   .solucoes-left {
+       margin-top: 10%;
+       margin-right: 0%;
+   }
+
+   .solucoes-left h1 {
+       font-size: 2.6rem;
+       text-align: center;
+       margin-bottom: 30px;
+   }
+
+   .solucoes-left li {
+       font-size: 1rem;
+       margin-top: 20px;
+   }
+
+
+   /* -- FIM SOLUCOES -- */
         /* -- FIM MAIN -- */
 }
 @media screen and (max-width: 550px) {
+/* -- MAIN -- */    
+/* -- HOME -- */
 .right #botao {
         height: 60px;
         position: absolute;
-        top: 71%;
+        top: 81.5%;
         width: 200px;
         background-color: #edb865;
         border-radius: 10px;
@@ -639,6 +1009,55 @@ color: #187b6f;
         font-weight: 800;
         font-size: 1.3rem;
     }
+/* -- FIM HOME -- */
+   /* -- SOLUCOES -- */
+   .solucoes-leftRight-container {
+       /* padding: 0% 10%; */
+       height: 100%;
+       width: 100%;
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .img-shadow {
+
+       height: 230px;
+       top: 66px;
+       left: 70px;
+       width: 355px;
+       position: absolute;
+       background-color: #be8c3c;
+       border-radius: 25px;
+   }
+
+   .solucoes-right img {
+       width: 400px;
+       margin-top: 0px;
+       border-radius: 25px;
+       position: relative;
+   }
+
+   .solucoes-left {
+       margin-top: 10%;
+       margin-right: 0%;
+   }
+
+   .solucoes-left h1 {
+       font-size: 2.6rem;
+       text-align: center;
+       margin-bottom: 30px;
+   }
+
+   .solucoes-left li {
+       font-size: 1rem;
+       margin-top: 20px;
+   }
+
+
+   /* -- FIM SOLUCOES -- */
+/* -- FIM MAIN -- */    
 }
 
 
@@ -673,7 +1092,7 @@ color: #187b6f;
   .right #botao {
       height: 60px;
       position: absolute;
-      top: 71.5%;
+      top: 82%;
       width: 200px;
       background-color: #edb865;
       border-radius: 10px;
@@ -715,9 +1134,28 @@ color: #187b6f;
       font-size: 0.9rem;
   }
 
- 
-        /* -- FIM MAIN --*/
-        /* -- FIM HOME -- */
+    /* -- FIM HOME -- */
+    /* -- SOLUCOES -- */
+   .img-shadow {
+
+       height: 200px;
+       top: 62px;
+       left: 55px;
+       width: 320px;
+       position: absolute;
+       background-color: #be8c3c;
+       border-radius: 25px;
+   }
+
+   .solucoes-right img {
+       width: 350px;
+       margin-top: 0px;
+       border-radius: 25px;
+       position: relative;
+   }
+    /* -- FIM SOLUCOES -- */
+    /* -- FIM MAIN --*/
+  
 
 
 }
