@@ -7,7 +7,7 @@ body{
     margin-left: 0;
     margin-bottom: 0;
     padding: 0;
-    height: 3000px;
+    height: 5000px;
 }
 main{
     position: relative;
@@ -245,13 +245,13 @@ color: #187b6f;
     background-color: #edb865;
     border-radius: 10px;
     border: none;
-    color: rgb(204, 204, 204);
+    color: white;
     font-weight: 800;
     font-size: 1.3rem;
 }
 .right #botao:hover {
      background-color: #be8c3c;
-    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
     cursor: pointer;
  }
 
@@ -323,6 +323,78 @@ color: #187b6f;
     position: relative;
 }
 /* -- FIM SOLUCOES -- */
+/* -- MERCADO ALVO -- */
+#mercadoAlvo{
+    border: 2px solid red;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+    /* display: flex; */
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+
+}
+.mercadoAlvo-imagem-container{
+    position: relative;
+}
+.mercadoAlvo-left{
+    position: relative;
+}
+.mercadoAlvo-imagem-container img{
+    height: 450px;
+    border-radius:25px ;
+    box-shadow: -2px 0px 20px rgb(183, 183, 183);
+    position: relative;
+}
+.mercadoAlvo-image-shadow{
+    height: 435px;
+        top: 35px;
+        left:40px;
+        width: 430px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+        box-shadow: 0px 5px 10px rgb(118, 118, 118);
+}
+.mercadoAlvo-right{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+.mercadoAlvo-right-lista{
+    align-items: center;
+    height: 10px;
+    display: flex;
+    padding: 40px;
+    font-size: 1.5rem;
+
+    /* margin: 30px; */
+}
+.mercadoAlvo-leftRight-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.mercadoAlvo-right-lista img{
+    width: 70px;
+    height: 55px;
+    margin-right: 10px;
+}
+#mercadoAlvo h1{
+    font-size: 3.5rem;
+        color: #187b6f
+}
+
+
+
+
+/* -- FIM MERCADO ALVO -- */
+
 /* -- END MAIN -- */
 @media screen and (max-width: 1700px) {
     
@@ -401,7 +473,33 @@ color: #187b6f;
         position: relative;
     }
         /* -- FIM SOLUCOES -- */
-        
+ /* -- MERCADO ALVO -- */
+ .mercadoAlvo-imagem-container img {
+     height: 400px;
+ }
+
+ .mercadoAlvo-image-shadow {
+     height: 370px;
+     top: 50px;
+     left: 40px;
+     width: 380px;
+ }
+ .mercadoAlvo-right-lista {
+     /* font-size: 1.3rem; */
+ }
+
+ .mercadoAlvo-right-lista img {
+     width: 65px;
+     height: 52px;
+ }
+ #mercadoAlvo h1 {
+     font-size: 3.1rem;
+ }
+
+
+
+
+ /* -- FIM MERCADO ALVO -- */
         
         
         /* -- FIM MAIN -- */
@@ -451,7 +549,7 @@ color: #187b6f;
             width: 200px;
             font-size: 1.3rem;
          }
-           /* -- FIM MAIN -- */
+        /* -- FIM HOME -- */
            /* -- SOLUCOES -- */
  .solucoes-left h1 {
      font-size: 2.8rem;
@@ -479,7 +577,33 @@ color: #187b6f;
      position: relative;
  }
            /* -- FIM SOLUCOES -- */
-           /* -- FIM HOME -- */
+
+   /* -- MERCADO ALVO -- */ 
+.mercadoAlvo-imagem-container img {
+    height: 350px;
+}
+
+.mercadoAlvo-image-shadow {
+    height: 320px;
+    top: 50px;
+    left: 40px;
+    width: 330px;
+}
+
+.mercadoAlvo-right-lista {
+    font-size: 1.4rem;
+}
+
+.mercadoAlvo-right-lista img {
+    width: 65px;
+    height: 52px;
+}
+
+#mercadoAlvo h1 {
+    font-size: 2.8rem;
+}
+   /* -- FIM MERCADO ALVO -- */      
+            /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 1450px) {
@@ -520,8 +644,11 @@ color: #187b6f;
             font-size: 1rem;
     
         }
-         /* -- FIM MAIN -- */
+         
+
          /* -- FIM HOME -- */
+         /* -- FIM MAIN -- */
+
 }
 
 @media screen and (max-width: 1250px){
@@ -607,6 +734,32 @@ color: #187b6f;
  }
 
  /* -- FIM SOLUCOES -- */
+   /* -- MERCADO ALVO -- */
+   .mercadoAlvo-imagem-container img {
+       height: 330px;
+   }
+
+   .mercadoAlvo-image-shadow {
+       height: 300px;
+       top: 50px;
+       left: 40px;
+       width: 310px;
+   }
+
+   .mercadoAlvo-right-lista {
+       font-size: 1.3rem;
+   }
+
+   .mercadoAlvo-right-lista img {
+       width: 62px;
+       height: 50px;
+   }
+
+   #mercadoAlvo h1 {
+       font-size: 2.6rem;
+   }
+
+   /* -- FIM MERCADO ALVO -- */
  /* -- FIM MAIN -- */
 }
 
@@ -733,12 +886,49 @@ color: #187b6f;
      position: relative;
  }
         
-                /* -- FIM SOLUCOES -- */
+    /* -- FIM SOLUCOES -- */
+   /* -- MERCADO ALVO -- */
+   .mercadoAlvo-imagem-container img {
+       height: 330px;
+   }
+
+   .mercadoAlvo-image-shadow {
+       height: 300px;
+       top: 50px;
+       left: 40px;
+       width: 310px;
+   }
+
+   .mercadoAlvo-right-lista {
+       font-size: 1.1rem;
+   }
+
+   .mercadoAlvo-right-lista img {
+       width: 62px;
+       height: 50px;
+   }
+
+   #mercadoAlvo h1 {
+       font-size: 2.4rem;
+   }
+#mercadoAlvo {
+    border: 2px solid red;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    /* display: flex; */
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+
+}
+
+   /* -- FIM MERCADO ALVO -- */
     /* -- FIM MAIN -- */
 
 }
 @media screen and (max-width: 840px) {
-
+    /* -- MAIN -- */
     /* -- SOLUCOES -- */
 #solucoes {
         /* border: 2px solid cyan; */
@@ -791,6 +981,72 @@ margin-right: 0%;
         
     
         /* -- FIM SOLUCOES -- */
+   /* -- MERCADO ALVO -- */
+   #mercadoAlvo{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   #mercadoAlvo h1{
+    margin-bottom: 10%;
+    font-size: 3rem;
+   }
+    .mercadoAlvo-left {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8%;
+        /* margin-top: 5%; */
+    }
+    .mercadoAlvo-right{
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+   .mercadoAlvo-image-shadow {
+       height: 395px;
+       top: 50px;
+       left: 40px;
+       width: 400px;
+   }
+
+   .mercadoAlvo-right-lista {
+       font-size: 1.3rem;
+   }
+
+   .mercadoAlvo-right-lista img {
+       width: 62px;
+       height: 50px;
+    
+   }
+
+  
+
+   #mercadoAlvo {
+       border: 2px solid red;
+       padding-top: 8%;
+       padding-bottom: 2%;
+       padding-right: 5%;
+       padding-left: 5%;
+       /* display: flex; */
+       align-items: center;
+       background-color: rgb(238, 238, 238);
+
+   }
+   .mercadoAlvo-leftRight-container {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 100%;
+       margin-bottom: 50px;
+   }
+.mercadoAlvo-imagem-container img {
+    height: 420px;
+    box-shadow: -3px -3px 30px rgb(123, 123, 123);
+}
+  
+   /* -- FIM MERCADO ALVO -- */
+
+       /* -- FIM MAIN -- */ 
 }
 @media screen and (max-width: 760px) {
     /* -- MAIN --*/
@@ -877,6 +1133,42 @@ margin-right: 0%;
 
 
    /* -- FIM SOLUCOES -- */
+   /* -- MERCADO ALVO -- */
+   #mercadoAlvo {
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   #mercadoAlvo h1 {
+       margin-bottom: 10%;
+       font-size: 3rem;
+   }
+
+   .mercadoAlvo-left {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 8%;
+       /* margin-top: 5%; */
+   }
+
+   .mercadoAlvo-right {
+       margin-left: 0;
+   }
+
+   .mercadoAlvo-image-shadow {
+       height: 375px;
+       top: 50px;
+       left: 40px;
+       width: 385px;
+   }
+
+   .mercadoAlvo-imagem-container img {
+       height: 400px;
+       box-shadow: -3px -3px 30px rgb(123, 123, 123);
+   }
+
+   /* -- FIM MERCADO ALVO -- */
     /* -- FIM MAIN -- */
 }
 @media screen and (max-width: 700px) {
@@ -945,17 +1237,7 @@ margin-right: 0%;
    
 
     /* -- FIM HOME -- */
-   /* -- SOLUCOES -- */
-   .solucoes-leftRight-container {
-       /* padding: 0% 10%; */
-       height: 100%;
-       width: 100%;
-       display: flex;
-       flex-direction: column-reverse;
-       justify-content: space-between;
-       align-items: center;
-   }
-
+/* -- SOLUCOES -- */
    .img-shadow {
 
        height: 260px;
@@ -992,6 +1274,21 @@ margin-right: 0%;
 
 
    /* -- FIM SOLUCOES -- */
+   /* -- MERCADO ALVO -- */
+
+
+   #mercadoAlvo h1 {
+       margin-bottom: 8%;
+       font-size: 2.6rem;
+   }
+   .mercadoAlvo-right{
+    margin-top: 10%;
+   }
+   #mercadoAlvo {
+       padding-top: 5%;
+   }
+
+   /* FIM MERCADO ALVO -- */
         /* -- FIM MAIN -- */
 }
 @media screen and (max-width: 550px) {
@@ -1057,6 +1354,21 @@ margin-right: 0%;
 
 
    /* -- FIM SOLUCOES -- */
+/* -- MERCADO ALVO -- */ 
+.mercadoAlvo-image-shadow {
+    height: 325px;
+    top: 50px;
+    left: 40px;
+    width: 335px;
+}
+.mercadoAlvo-right-lista {
+    font-size: 1.2rem;
+}
+.mercadoAlvo-imagem-container img {
+    height: 350px;
+    box-shadow: -3px -3px 30px rgb(123, 123, 123);
+}
+/* FIM MERCADO ALVO -- */  
 /* -- FIM MAIN -- */    
 }
 
@@ -1154,11 +1466,31 @@ margin-right: 0%;
        position: relative;
    }
     /* -- FIM SOLUCOES -- */
+/* -- MERCADO ALVO -- */
+
+.mercadoAlvo-image-shadow {
+    height: 215px;
+    top: 50px;
+    left: 40px;
+    width: 225px;
+}
+
+.mercadoAlvo-imagem-container img {
+    height: 250px;
+    box-shadow: -3px -3px 30px rgb(123, 123, 123);
+}
+.mercadoAlvo-right-lista {
+    font-size: 1.1rem;
+}
+   
+
+
+
+/* FIM MERCADO ALVO -- */
     /* -- FIM MAIN --*/
 }
 @media screen and (max-width: 480px) {
 .img-shadow {
-
         height: 162px;
         top: 60px;
         left: 45px;
