@@ -1138,24 +1138,40 @@ margin-right: 0%;
     /* -- SOLUCOES -- */
    .img-shadow {
 
-       height: 200px;
-       top: 62px;
-       left: 55px;
-       width: 320px;
+       height: 170px;
+       top: 60px;
+       left: 45px;
+       width: 290px;
        position: absolute;
        background-color: #be8c3c;
        border-radius: 25px;
    }
 
    .solucoes-right img {
-       width: 350px;
+       width: 320px;
        margin-top: 0px;
        border-radius: 25px;
        position: relative;
    }
     /* -- FIM SOLUCOES -- */
     /* -- FIM MAIN --*/
-  
+}
+@media screen and (max-width: 480px) {
+.img-shadow {
 
+        height: 162px;
+        top: 60px;
+        left: 45px;
+        width: 270px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
+    .solucoes-right img {
+        width: 300px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
 }
