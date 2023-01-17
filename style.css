@@ -420,6 +420,7 @@ color: #187b6f;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 #ServicosPrestados h2{
     font-size: 2rem;
@@ -429,6 +430,7 @@ color: #187b6f;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    position: relative;
     
 }
 
@@ -1162,7 +1164,7 @@ margin-right: 0%;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 30px;
-    margin-top: 0%;
+    margin-top: 80px;
 }
 
 .SP-solucoes-left li {
@@ -1240,12 +1242,13 @@ margin-right: 0%;
    /* -- FIM MERCADO ALVO -- */
 /* -- SERVIÇOS PRESTADOS -- */
 /* -- MAIN -- */
+
 #ServicosPrestados h2 {
     font-size: 1.4rem;
 }
 #ServicosPrestados h1 {
     margin-bottom: 50px;
-    margin-top: 0};
+    margin-top: 10%};
 
 #ServicosPrestados li {
     margin-bottom: 30px;
@@ -1305,7 +1308,7 @@ margin-right: 0%;
 
  .SP-right-image-container-two .SP-image-shadow {
      height: 185px;
-     top: 35px;
+     top: 30px;
      left: 40px;
      width: 280px;
  }
@@ -1467,8 +1470,10 @@ margin-right: 0%;
 /* #ServicosPrestados{
    padding-top: 0; 
 } */
+
 #ServicosPrestados h1 {
-        font-size: 2.6rem
+        font-size: 2.6rem;
+        margin-top: 0;
     }
 #ServicosPrestados li {
     margin-bottom: 25px;
@@ -1481,12 +1486,15 @@ margin-right: 0%;
 
 .SP-right {
    
-    height: 80%;
+    height: fit-content;
     display: flex;
     width: 95%;
     justify-content: center;
     align-items: flex-start;
     margin-left: 0%;
+   position: relative;
+   margin-bottom: 20px;
+   /* top: 100px;  */
 
 }
  .SP-right-image-container-one{
@@ -1509,6 +1517,13 @@ margin-right: 0%;
      left: 40px;
      width: 430px;
  }
+ .SP-leftRight-container{
+    margin-top: 0px;
+    height: fit-content;
+ }
+#ServicosPrestados{
+    height: fit-content;
+}
     /* -- FIM SERVIÇOS PRESTADOS -- */
     
     /* -- FIM MAIN -- */
@@ -1600,7 +1615,7 @@ margin-right: 0%;
    }
 
    .SP-solucoes-left {
-       margin-top: 10%;
+       margin-top: 10% !important;
        margin-right: 0%;
    }
 
@@ -1608,6 +1623,7 @@ margin-right: 0%;
        font-size: 2.6rem;
        text-align: center;
        margin-bottom: 30px;
+       margin-top: 20px;
    }
 
    .SP-solucoes-left li {
@@ -1633,18 +1649,19 @@ margin-right: 0%;
         /* -- SERVIÇOS PRESTADOS -- */
     
 .SP-right {
-
     height: 80%;
     display: flex;
     width: 90%;
     align-items: flex-start;
     margin-left: 0%;
 }
- .SP-right-image-container-two{
 
-    margin-top: 220px;
- }
-     
+#ServicosPrestados{
+    padding: 10% 5%;
+}
+.SP-text {
+   
+}
 
  .SP-right-image-container-two img {
 
@@ -1652,12 +1669,18 @@ margin-right: 0%;
      position: relative;
      border-radius: 25px;
  }
+ .SP-solucoes-left{
+    margin-top: 0;
+ }
 
  .SP-right-image-container-two .SP-image-shadow {
      height: 290px;
      top: 35px;
      left: 40px;
      width: 430px;
+ }
+.SP-text {
+    margin-top: 0 !important;
  }
 /* -- FIM SERVIÇOS PRESTADOS -- */
 
@@ -1795,19 +1818,23 @@ margin-right: 0%;
 
 
 }
+
 .SP-right{
-    top: 140px;
+    /* top: 140px; */
 
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
 }
- 
+.SP-leftRight-container{
+    height: fit-content;
+}
 .SP-leftRight-container h1{
    position: relative;
-   top: 30px;
+   /* top: 30px; */
+
 }
 .SP-left-lista-container{
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .SP-right-image-container-two img {
 
@@ -1954,10 +1981,10 @@ margin-right: 0%;
 }
 
 .SP-right {
-    top: 140px;
+    /* top: 140px; */
 
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 10px;
 }
 
 /* .SP-solucoes-left h1 {
@@ -2013,21 +2040,23 @@ margin-right: 0%;
     margin-top: 0px;   
     }
 .SP-right {
-    top: 140px;   
+    /* top: 140px;    */
     position: relative;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
 }
-        
+#ServicosPrestados h1{
+    margin-bottom: 15px;
+}
 .SP-leftRight-container h1 {
     position: relative;
-    top: 30px;
+    /* top: 30px; */
 }
 .SP-left-lista-container h2{
     font-size: 1.3rem !important;
 }
         
 .SP-left-lista-container {
-margin-top: 70px;
+/* margin-top: 70px; */
     }
 .SP-right-image-container-two img {  
     width: 310px;
@@ -2036,12 +2065,12 @@ margin-top: 70px;
     }
         
 .SP-image-shadow img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     }
         
 .SP-right-image-container-two .SP-image-shadow {
         height: 190px;
-        top: 35px;
+        /* top: 35px; */
         left: 40px;
         width: 290px;
     }
