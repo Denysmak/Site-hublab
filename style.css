@@ -19,6 +19,9 @@ a{
     text-decoration: none;
     
 }
+h1{
+    color: #187b6f;
+}
 
 /*  -- HEADER -- */
 
@@ -173,7 +176,7 @@ color: #187b6f;
 .home-leftRight-container .left h1{
     font-size: 4.5rem;
     /* color: rgb(63, 63, 63); */
-    color: #0b3833;
+    /* color: #0b3833; */
 }
 .home-leftRight-container .left p{
     font-weight:400;
@@ -217,6 +220,7 @@ color: #187b6f;
 .home-leftRight-container .right .top h1{
     text-align: center;
     font-size: 2rem;
+    color: #D9D9D9;
 }
 .home-leftRight-container .right .bottom {
     display: flex;
@@ -288,7 +292,7 @@ color: #187b6f;
     color: D9D9D9;
     max-width: 700px;
     margin-top: 45px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: -20px;
 }
 .solucoes-leftRight-container{
@@ -471,7 +475,7 @@ color: #187b6f;
 
  #ServicosPrestados li {
      margin-bottom: 50px;
-     font-size: 1.8rem;
+     font-size: 1.4rem;
  }
 
 
@@ -515,7 +519,6 @@ color: #187b6f;
     }
     .home-leftRight-container .left h1 {
         font-size: 3.5rem;     
-        color: #0b3833;
         }
     
         .home-leftRight-container .left p {
@@ -632,7 +635,7 @@ color: #187b6f;
     
         .home-leftRight-container .left h1 {
             font-size: 3.4rem;
-            color: #0b3833;
+
         }
     
         .home-leftRight-container .left p {
@@ -739,7 +742,7 @@ color: #187b6f;
     
          .home-leftRight-container .left h1 {
             font-size: 3.3rem;
-            color: #0b3833;
+
         } 
     
         .home-leftRight-container .left p {
