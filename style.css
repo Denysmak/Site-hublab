@@ -188,7 +188,8 @@ color: #187b6f;
     /* border: 2px solid red; */
     width: 500px;
     height: 700px;
-    border-radius: 45px;
+    /* border-radius: 45px; */
+    border-radius: 25px;
     overflow: hidden;
     color: white;
     box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -499,6 +500,63 @@ color: #187b6f;
 
 
 /* -- FIM SERVIÇOS PRESTADOS -- */
+/* -- CO-FUNDADORES -- */
+#coFundadores{
+    padding: 5%;
+}
+.coFundadores-heading{
+    font-size: 4rem;
+    text-align: center;
+}
+.coFundadores-imagens{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0%;
+}
+.pessoa{
+    height: 650px;
+    width: 330px;
+    border-radius: 25px;
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: 10px 10px 20px rgb(83, 83, 83);
+}
+.pessoa li{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 210px;
+}
+
+.pessoa-imagem{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pessoa-imagem img{
+    border-radius: 15px;
+    height: 80%
+}
+.pessoa-lista ul{
+padding-right: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.pessoa-lista{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* -- FIM CO-FUNDADORES -- */
+
+
 /* -- END MAIN -- */
 @media screen and (max-width: 1700px) {
     
@@ -512,7 +570,8 @@ color: #187b6f;
             /* border: 2px solid red; */
             width: 450px;
             height: 650px;
-            border-radius: 45px;
+            /* border-radius: 45px; */
+            border-radius: 25px;
             overflow: hidden;
             color: white;
             box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -611,6 +670,20 @@ color: #187b6f;
    }
 
    /* -- FIM SERVIÇOS PRESTADOS -- */
+/* -- CO-FUNDADORES -- */
+.pessoa li {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    width: 210px;
+}
+.coFundadores-heading {
+    font-size: 3.1rem;
+}
+.pessoa {
+    height: 600px;
+    width: 300px;
+}
+/* -- FIM CO-FUNDADORES -- */
         /* -- FIM MAIN -- */
     }
 @media screen and (max-width: 1550px) {
@@ -625,7 +698,8 @@ color: #187b6f;
             /* border: 2px solid red; */
             width: 400px;
             height: 600px;
-            border-radius: 45px;
+            /* border-radius: 45px; */
+            border-radius: 25px;
             overflow: hidden;
             color: white;
             box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -717,7 +791,13 @@ color: #187b6f;
     font-size: 1.8rem;
 }
 /* -- FIM SERVIÇOS PRESTADOS -- */
+/* -- CO-FUNDADORES -- */
 
+.coFundadores-heading {
+    font-size: 2.8rem;
+}
+
+/* -- FIM CO-FUNDADORES -- */
             /* -- FIM MAIN -- */
 }
 
@@ -732,7 +812,8 @@ color: #187b6f;
             /* border: 2px solid red; */
             width: 350px;
             height: 550px;
-            border-radius: 45px;
+            /* border-radius: 45px; */
+            border-radius: 25px;
             overflow: hidden;
             color: white;
             box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -886,7 +967,23 @@ color: #187b6f;
  }
 
  /* -- FIM SERVIÇOS PRESTADOS -- */
- /* -- FIM SERVIÇOS PRESTADOS -- */  
+/* -- CO-FUNDADORES -- */
+
+.coFundadores-heading {
+    font-size: 2.6rem;
+}
+.pessoa li {
+    font-size: 1rem;
+    margin-top: 8px;
+    width: 210px;
+}
+
+
+.pessoa {
+    height: 550px;
+    width: 270px;
+}
+/* -- FIM CO-FUNDADORES -- */
  /* -- FIM MAIN -- */
 }
 
@@ -952,7 +1049,8 @@ color: #187b6f;
     /* border: 2px solid red; */
     width: 300px;
     height: 480px;
-    border-radius: 45px;
+    /* border-radius: 45px; */
+    border-radius: 25px;
     overflow: hidden;
     color: white;
     box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -1103,6 +1201,28 @@ color: #187b6f;
 
 
  /* -- FIM SERVIÇOS PRESTADOS -- */
+ /* -- CO-FUNDADORES -- */
+
+ .coFundadores-heading {
+     font-size: 2.4rem;
+ }
+
+ .pessoa li {
+     font-size: 0.9rem;
+     margin-top: 8px;
+     width: 210px;
+ }
+
+
+ .pessoa {
+     height: 450px;
+     width: 250px;
+ }
+ #cofundadores{
+    padding: 5% 3%;
+ }
+
+ /* -- FIM CO-FUNDADORES -- */
     /* -- FIM MAIN -- */
 
 }
@@ -1117,6 +1237,30 @@ color: #187b6f;
      font-size: 1.1rem;
  }
     /* -- FIM SERVIÇOS PRESTADOS -- */
+ /* -- CO-FUNDADORES -- */
+
+ .coFundadores-heading {
+     font-size: 2.4rem;
+ }
+
+ .pessoa li {
+     font-size: 0.85rem;
+     margin-top: 8px;
+     width: 210px;
+ }
+
+
+ .pessoa {
+     height: 470px;
+     width: 240px;
+ }
+
+ #cofundadores {
+     padding: 5% 3%;
+ }
+
+ /* -- FIM CO-FUNDADORES -- */
+
     /* -- FIM MAIN -- */
 }
 @media screen and (max-width: 840px) {
@@ -1314,6 +1458,44 @@ margin-right: 0%;
  }
 
 /* -- FIM SERVIÇOS PRESTADOS -- */
+ /* -- CO-FUNDADORES -- */
+
+ .coFundadores-heading {
+     font-size: 3rem;
+    margin: 15px;    
+    }
+ .coFundadores-imagens{
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+
+ .pessoa li {
+     font-size: 1.2rem;
+     margin-top: 7px;
+     width: 80%;
+ }
+
+
+ .pessoa {
+     height: 500px;
+     width: 300px;
+     margin-bottom: 10%;
+ }
+
+ #cofundadores {
+     padding: 5% 3%;
+ }
+ .pessoa-imagem img{
+    width:200px;
+    height: 80%;
+ }
+ .pessoa-lista ul{
+    margin: 0;
+ }
+
+ /* -- FIM CO-FUNDADORES -- */
        /* -- FIM MAIN -- */ 
 }
 @media screen and (max-width: 780px){
@@ -1340,7 +1522,8 @@ margin-right: 0%;
         /* border: 2px solid red; */
         width: 250px;
         height: 400px;
-        border-radius: 45px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
         overflow: hidden;
         color: white;
         box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -1566,7 +1749,8 @@ margin-right: 0%;
             width: 85%;
             margin-bottom: 10%;
             height: 450px;
-            border-radius: 45px;
+            /* border-radius: 45px; */
+            border-radius: 25px;
             overflow: hidden;
             color: white;
             box-shadow: 5px 10px 10px rgb(128, 128, 128);
@@ -1854,6 +2038,47 @@ margin-right: 0%;
 } 
 
 /* -- FIM SERVIÇOS PRESTADOS --*/
+ /* -- CO-FUNDADORES -- */
+
+ .coFundadores-heading {
+     font-size: 2.6rem;
+     margin: 25px 0px;
+ }
+
+ .coFundadores-imagens {
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+
+ .pessoa li {
+     font-size: 1.2rem;
+     margin-top: 7px;
+     width: 80%;
+ }
+
+
+ .pessoa {
+     height: 500px;
+     width: 300px;
+     margin-bottom: 10%;
+ }
+
+ #cofundadores {
+     padding: 5% 3%;
+ }
+
+ .pessoa-imagem img {
+     width: 200px;
+     height: 80%;
+ }
+
+ .pessoa-lista ul {
+     margin: 0;
+ }
+
+ /* -- FIM CO-FUNDADORES -- */
 /* -- FIM MAIN -- */    
 }
 
@@ -2076,4 +2301,45 @@ margin-right: 0%;
     }
         
 /* -- FIM SERVIÇOS PRESTADOS --*/
+ /* -- CO-FUNDADORES -- */
+
+ .coFundadores-heading {
+     font-size: 2.6rem;
+     margin: 25px 0px;
+ }
+
+ .coFundadores-imagens {
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+
+ .pessoa li {
+     font-size: 1.1rem;
+     margin-top: 7px;
+     width: 80%;
+ }
+
+
+ .pessoa {
+     height: 480px;
+     width: 280px;
+     margin-bottom: 10%;
+ }
+
+ #cofundadores {
+     padding: 5% 3%;
+ }
+
+ .pessoa-imagem img {
+     width: 180px;
+     height: 80%;
+ }
+
+ .pessoa-lista ul {
+     margin: 0;
+ }
+
+ /* -- FIM CO-FUNDADORES -- */
 }
