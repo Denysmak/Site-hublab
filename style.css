@@ -523,6 +523,7 @@ color: #187b6f;
     flex-direction: column;
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
     box-shadow: 10px 10px 20px rgb(83, 83, 83);
+    padding-bottom:30px;
 }
 .pessoa li{
     font-size: 1.2rem;
@@ -550,7 +551,13 @@ align-items: center;
     height: 65%;
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+}
+.pessoa-lista h2{
+    margin-top: 0;
+    max-width: 80%;
+    text-align: center;
 }
 
 
@@ -1241,6 +1248,11 @@ align-items: center;
 
  .coFundadores-heading {
      font-size: 2.4rem;
+     margin: 0;
+ }
+
+ .pessoa-lista h2{
+    font-size: 1.3rem;
  }
 
  .pessoa li {
@@ -1251,13 +1263,17 @@ align-items: center;
 
 
  .pessoa {
-     height: 470px;
+     height: 460px;
      width: 240px;
  }
 
  #cofundadores {
      padding: 5% 3%;
  }
+.pessoa-imagem img {
+    border-radius: 15px;
+    height: 74%
+}
 
  /* -- FIM CO-FUNDADORES -- */
 
