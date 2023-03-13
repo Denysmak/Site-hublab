@@ -1,53 +1,52 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     margin-top: 30px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
     padding: 0;
-    height: 5000px;
+    box-sizing: border-box;
+    height: 8000px;
+    width: 100%;
+    /* min-width: 100%; */
 }
-main{
+
+main {
     position: relative;
     top: 90px;
-    
+    width: 100%;
 }
-a{
+a {
     color: #D9D9D9;
     text-decoration: none;
-    
 }
-h1{
+h1 {
     color: #187b6f;
 }
-
 /*  -- HEADER -- */
-
-header{
+header {
     width: 100%;
     border: none;
     margin: 0;
-    
     display: flex;
     justify-content: center;
     position: fixed;
-    height: 90px;
+    height: 90px; 
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-    /* border-bottom: 1px solid white; */
     z-index: 2;
 }
-nav{
-display: flex;
-justify-content: space-between;
-width: 1300px;
-align-items: center;
-margin: 0%;
-
-
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px !important;
+    /* width: 100%; */
+    align-items: center;
+    margin: 0%;
 }
-.nav-image-container{
+.nav-image-container {
     border-radius: 50%;
     margin: 5px;
     display: flex;
@@ -55,87 +54,86 @@ margin: 0%;
     justify-content: center;
     overflow: hidden;
     height: fit-content;
-
 }
-.nav-image-container h1{
+.nav-image-container h1 {
     color: #187b6f;
-    margin-left: 20px;
+     margin-left: 20px;
     font-size: 2.5rem;
 }
+
 .nav-image-container span {
     color: #edb865;
 }
 
-.nav-image{
+.nav-image {
     height: 70px;
     width: 70px;
     display: none;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     align-items: center;
     margin-right: 15px;
     position: relative;
 }
-.nav-links p{
-    margin:0 8px;
+
+.nav-links p {
+    margin: 0 8px;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
     color: rgb(173, 173, 173);
 }
+
 .nav-links p:hover {
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
 
-.nav-links-botoes-1{
+.nav-links-botoes-1 {
     display: flex;
-   
+
 }
+
 .nav-links-botoes-2 {
     width: 250px;
     display: none;
     position: absolute;
     top: 50px;
     left: -500%;
-
     border-radius: 3%;
     background-color: rgba(45, 73, 79, 2);
 }
-.nav-lista{
+.nav-lista {
     width: 50px !important;
     height: 60px;
     display: none;
 }
-
 /*  -- FIM HEADER -- */
-
 /*  -- MAIN -- */
 /* -- HOME -- */
-#home{
+#home {
     width: 100%;
-
-
 }
-.home-logo-container{
+.home-logo-container {
     height: 502px;
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
 }
-.home-logo{
-
+.home-logo {
     margin-top: -40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.home-logo h1{
-font-size: 8rem;
-text-align: center;
-color: #edb865;
-margin: 0;
+.home-logo h1 {
+    font-size: 8rem;
+    text-align: center;
+    color: #edb865;
+    margin: 0;
 }
+
 .home-logo h2 {
     text-align: center;
     color: #edb865;
@@ -143,15 +141,17 @@ margin: 0;
     letter-spacing: 10px;
     font-size: 1.65rem;
 }
+
 .home-logo span {
-color: #187b6f;
+    color: #187b6f;
 }
-.home-logo img{
+
+.home-logo img {
     width: 300px;
     margin-bottom: -50px;
 }
 
-.home-leftRight-container{
+.home-leftRight-container {
     /* border: 2px solid red; */
     /* padding: 100px 100px; */
     padding: 10% 10%;
@@ -173,17 +173,20 @@ color: #187b6f;
     justify-content: center;
 
 }
-.home-leftRight-container .left h1{
+
+.home-leftRight-container .left h1 {
     font-size: 4.5rem;
     /* color: rgb(63, 63, 63); */
     /* color: #0b3833; */
 }
-.home-leftRight-container .left p{
-    font-weight:400;
+
+.home-leftRight-container .left p {
+    font-weight: 400;
     font-size: 1.5rem;
-   
+
 }
-.home-leftRight-container .right{
+
+.home-leftRight-container .right {
     position: relative;
     /* border: 2px solid red; */
     width: 500px;
@@ -193,22 +196,21 @@ color: #187b6f;
     overflow: hidden;
     color: white;
     box-shadow: 5px 10px 10px rgb(128, 128, 128);
-
 }
-.home-leftRight-container .right label{
+.home-leftRight-container .right label {
     font-size: 1.7rem;
     width: 90%;
 }
 .home-leftRight-container .right input {
-   height: 100%;
-   width: 90%;
-   border-radius: 50px;
+    height: 100%;
+    width: 90%;
+    border-radius: 50px;
     outline: none;
     border: none;
     padding-left: 20px;
     font-size: 1.2rem;
 }
-.home-leftRight-container .right .top{
+.home-leftRight-container .right .top {
     /* border: 2px solid cyan; */
     height: 20%;
     background-color: #edb865;
@@ -218,28 +220,29 @@ color: #187b6f;
     padding: 10px;
     box-sizing: border-box;
 }
-.home-leftRight-container .right .top h1{
+.home-leftRight-container .right .top h1 {
     text-align: center;
     font-size: 2rem;
     color: white;
 }
+
 .home-leftRight-container .right .bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#187b6f;
-    
+    background-color: #187b6f;
     height: 80%;
- 
 }
-.home-leftRight-container .right form{
+
+.home-leftRight-container .right form {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 65%;
-    margin-top: -15%;   
+    margin-top: -15%;
 }
-.inputContainer{
+
+.inputContainer {
     width: 85%;
     height: 100px;
     display: flex;
@@ -247,7 +250,8 @@ color: #187b6f;
     margin: 20px 0px;
     align-items: center;
 }
-.right #botao{
+
+.right #botao {
     height: 60px;
     position: absolute;
     top: 82%;
@@ -259,25 +263,26 @@ color: #187b6f;
     font-weight: 800;
     font-size: 1.3rem;
 }
+
 .right #botao:hover {
-     background-color: #be8c3c;
+    background-color: #be8c3c;
     font-size: 1.4rem;
     cursor: pointer;
- }
+}
 
 
 /* -- END HOME -- */
 /* -- SOLUCOES -- */
 
-#solucoes{
+#solucoes {
     /* border: 2px solid cyan; */
     /* height: 767px; */
-        background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
-    padding: 5% 10%;  
+    padding: 5% 10%;
 }
 
-.SP-solucoes-left{
+.SP-solucoes-left {
     /* border: 1px solid white; */
     height: 90%;
     margin-right: 5%;
@@ -285,25 +290,29 @@ color: #187b6f;
     flex-direction: column;
     justify-content: center;
 }
+
 .SP-solucoes-left h1 {
     font-size: 3.5rem;
     margin-top: 10px;
     margin-bottom: 5%;
-;
+    ;
     color: #187b6f;
 }
-.SP-solucoes-left li{
+
+.SP-solucoes-left li {
     color: D9D9D9;
     max-width: 700px;
     margin-top: 30px;
     font-size: 1.2rem;
     margin-left: -20px;
 }
+
 .SP-left-lista-container h2 {
     font-size: 1.6rem !important;
     margin-bottom: 35px;
 }
-.solucoes-leftRight-container{
+
+.solucoes-leftRight-container {
     /* padding: 0% 10%; */
     height: 100%;
     width: 100%;
@@ -311,37 +320,42 @@ color: #187b6f;
     justify-content: space-between;
     align-items: center;
 }
+
 .solucoes-right {
     /* border: 1px solid red; */
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
-   
+
 }
-.imagem-sombra{
+
+.imagem-sombra {
     position: relative;
 
 }
-.img-shadow{
-   
+
+.img-shadow {
+
     height: 380px;
     top: 175px;
     left: 60px;
     width: 560px;
     position: absolute;
     background-color: #be8c3c;
-    border-radius:25px;
+    border-radius: 25px;
 }
-.solucoes-right img{
+
+.solucoes-right img {
     width: 600px;
     margin-top: 120px;
     border-radius: 25px;
     position: relative;
 }
+
 /* -- FIM SOLUCOES -- */
 /* -- MERCADO ALVO -- */
-#mercadoAlvo{
+#mercadoAlvo {
     padding-top: 8%;
     padding-bottom: 2%;
     padding-right: 10%;
@@ -350,39 +364,42 @@ color: #187b6f;
     align-items: center;
     background-color: rgb(238, 238, 238);
     border: 1px solid black;
+}
+.mercadoAlvo-imagem-container {
+    position: relative;
+}
+.mercadoAlvo-left {
+    position: relative;
+}
 
-}
-.mercadoAlvo-imagem-container{
-    position: relative;
-}
-.mercadoAlvo-left{
-    position: relative;
-}
-.mercadoAlvo-imagem-container img{
+.mercadoAlvo-imagem-container img {
     height: 450px;
-    border-radius:25px ;
+    border-radius: 25px;
     box-shadow: -2px 0px 20px rgb(183, 183, 183);
     position: relative;
 }
-.mercadoAlvo-image-shadow{
+
+.mercadoAlvo-image-shadow {
     height: 435px;
-        top: 35px;
-        left:40px;
-        width: 430px;
-        position: absolute;
-        background-color: #be8c3c;
-        border-radius: 25px;
-        box-shadow: 0px 5px 10px rgb(118, 118, 118);
+    top: 35px;
+    left: 40px;
+    width: 430px;
+    position: absolute;
+    background-color: #be8c3c;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgb(118, 118, 118);
 }
-.mercadoAlvo-right{
+
+.mercadoAlvo-right {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 50px;
-    
+
 }
-.mercadoAlvo-right-lista{
+
+.mercadoAlvo-right-lista {
     align-items: center;
     height: 10px;
     display: flex;
@@ -391,20 +408,23 @@ color: #187b6f;
 
     /* margin: 30px; */
 }
-.mercadoAlvo-leftRight-container{
+
+.mercadoAlvo-leftRight-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 100px;
 }
-.mercadoAlvo-right-lista img{
+
+.mercadoAlvo-right-lista img {
     width: 70px;
     height: 55px;
     margin-right: 10px;
 }
-#mercadoAlvo h1{
+
+#mercadoAlvo h1 {
     font-size: 3.5rem;
-        color: #187b6f
+    color: #187b6f
 }
 
 
@@ -412,7 +432,7 @@ color: #187b6f;
 
 /* -- FIM MERCADO ALVO -- */
 /* -- SERVIÇOS PRESTADOS -- */
-#ServicosPrestados{
+#ServicosPrestados {
     height: 800px;
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
     color: D9D9D9;
@@ -423,20 +443,22 @@ color: #187b6f;
     justify-content: center;
     position: relative;
 }
-#ServicosPrestados h2{
+
+#ServicosPrestados h2 {
     font-size: 2rem;
 }
-.SP-leftRight-container{
+
+.SP-leftRight-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     position: relative;
-    
+
 }
 
 
-.SP-right{
+.SP-right {
     /* background-color: cyan; */
     height: 100%;
     display: flex;
@@ -449,21 +471,25 @@ color: #187b6f;
 .SP-right-image-container-two img {
     width: 400px
 }
-.SP-right-image-container-one img{
+
+.SP-right-image-container-one img {
 
     width: 300px;
     position: relative;
     border-radius: 25px;
 }
-.SP-right-image-container-one{
+
+.SP-right-image-container-one {
     position: relative
 }
-.SP-right-image-container-one .SP-image-shadow{
+
+.SP-right-image-container-one .SP-image-shadow {
     height: 285px;
     top: 35px;
     left: 40px;
     width: 280px;
 }
+
 .SP-right-image-container-two img {
 
     width: 400px;
@@ -473,7 +499,7 @@ color: #187b6f;
 
 .SP-right-image-container-two {
     position: relative;
-    margin-bottom:10% ;
+    margin-bottom: 10%;
 }
 
 .SP-right-image-container-two .SP-image-shadow {
@@ -483,38 +509,41 @@ color: #187b6f;
     width: 380px;
 }
 
- #ServicosPrestados li {
-     margin-bottom: 50px;
-     font-size: 1.4rem;
- }
+#ServicosPrestados li {
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
 
 
 
 
-.SP-image-shadow{
-        position: absolute;
-        background-color: #be8c3c;
-        border-radius: 25px;
+.SP-image-shadow {
+    position: absolute;
+    background-color: #be8c3c;
+    border-radius: 25px;
 }
 
 
 
 /* -- FIM SERVIÇOS PRESTADOS -- */
 /* -- CO-FUNDADORES -- */
-#coFundadores{
+#coFundadores {
     padding: 5%;
 }
-.coFundadores-heading{
+
+.coFundadores-heading {
     font-size: 4rem;
     text-align: center;
 }
-.coFundadores-imagens{
+
+.coFundadores-imagens {
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
     padding: 5% 0%;
 }
-.pessoa{
+
+.pessoa {
     height: 650px;
     width: 330px;
     border-radius: 25px;
@@ -523,38 +552,43 @@ color: #187b6f;
     flex-direction: column;
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
     box-shadow: 10px 10px 20px rgb(83, 83, 83);
-    padding-bottom:30px;
+    padding-bottom: 30px;
 }
-.pessoa li{
+
+.pessoa li {
     font-size: 1.2rem;
     margin-top: 10px;
     width: 210px;
 }
 
-.pessoa-imagem{
+.pessoa-imagem {
     height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pessoa-imagem img{
+
+.pessoa-imagem img {
     border-radius: 15px;
     height: 80%
 }
-.pessoa-lista ul{
-padding-right: 5%;
-display: flex;
-flex-direction: column;
-align-items: center;
+
+.pessoa-lista ul {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.pessoa-lista{
+
+.pessoa-lista {
     height: 65%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.pessoa-lista h2{
+
+.pessoa-lista h2 {
     margin-top: 0;
     max-width: 80%;
     text-align: center;
@@ -564,66 +598,111 @@ align-items: center;
 /* -- FIM CO-FUNDADORES -- */
 
 
+/* -- AMBIENTE FIDIGITAL -- */
+#ambienteFidigital{
+    border: 2px solid red;
+    height: 600px;
+    background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 10%;
+}
+.ambienteFidigitalContainer{
+    /* padding: 3% 10%; */
+    color: #D9D9D9;
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+}
+.ambienteFidigitalLeft{
+    border: 2px solid blue;
+    width: 50%;    
+}
+.ambienteFidigitalRight{
+    border: 2px solid green;
+    width: 50%;
+}
+.ambienteFidigitalLeft h1{
+    font-size: 4rem;
+}
+/* -- FIM AMBIENTE FIDIGITAL -- */
+
 /* -- END MAIN -- */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1850px) {
+    /* -- AMBIENTE FIDIGITAL -- */
+   
     
+        /* -- FIM AMBIENTE FIDIGITAL -- */
+}
+@media screen and (max-width: 1700px) {
+
     /* -- MAIN -- */
     /* -- HOME -- */
 
-.home-leftRight-container .left {
+    .home-leftRight-container .left {
         width: 650px;
     }
+
     .home-leftRight-container .right {
-            /* border: 2px solid red; */
-            width: 450px;
-            height: 650px;
-            /* border-radius: 45px; */
-            border-radius: 25px;
-            overflow: hidden;
-            color: white;
-            box-shadow: 5px 10px 10px rgb(128, 128, 128);
-    
-        }
+        /* border: 2px solid red; */
+        width: 450px;
+        height: 650px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 5px 10px 10px rgb(128, 128, 128);
+
+    }
+
     .home-leftRight-container .right label {
         font-size: 1.5rem;
         width: 90%;
-        }
+    }
+
     .home-leftRight-container .right .top h1 {
         text-align: center;
         font-size: 1.8rem;
     }
+
     .home-leftRight-container .left h1 {
-        font-size: 3.5rem;     
-        }
-    
-        .home-leftRight-container .left p {
-            font-weight: 500;
-            font-size: 1.2rem;
-    
-        }
-        .right #botao {
-            height: 60px;     
-            top: 83%;
-            width: 200px;     
-            font-size: 1.3rem;
-        
-            }
-        /* -- FIM HOME -- */
-        
-        /* -- SOLUCOES -- */
-.SP-solucoes-left li {
-    color: D9D9D9;
-    max-width: 700px;
-    margin-top: 30px;
-    font-size: 1.5rem;
-}
+        font-size: 3.5rem;
+    }
+
+    .home-leftRight-container .left p {
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+    .right #botao {
+        height: 60px;
+        top: 83%;
+        width: 200px;
+        font-size: 1.3rem;
+
+    }
+
+    /* -- FIM HOME -- */
+
+    /* -- SOLUCOES -- */
+    .SP-solucoes-left li {
+        color: D9D9D9;
+        max-width: 700px;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
     .SP-solucoes-left h1 {
         font-size: 3.1rem;
     }
-        
+
     .SP-solucoes-left li {
         font-size: 1.3rem;
     }
+
     .img-shadow {
 
         height: 320px;
@@ -641,163 +720,181 @@ align-items: center;
         border-radius: 25px;
         position: relative;
     }
-        /* -- FIM SOLUCOES -- */
- /* -- MERCADO ALVO -- */
- .mercadoAlvo-imagem-container img {
-     height: 400px;
- }
 
- .mercadoAlvo-image-shadow {
-     height: 370px;
-     top: 50px;
-     left: 40px;
-     width: 380px;
- }
- .mercadoAlvo-right-lista {
-     /* font-size: 1.3rem; */
- }
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
+    .mercadoAlvo-imagem-container img {
+        height: 400px;
+    }
 
- .mercadoAlvo-right-lista img {
-     width: 65px;
-     height: 52px;
- }
- #mercadoAlvo h1 {
-     font-size: 3.1rem;
- }
+    .mercadoAlvo-image-shadow {
+        height: 370px;
+        top: 50px;
+        left: 40px;
+        width: 380px;
+    }
+
+    .mercadoAlvo-right-lista {
+        /* font-size: 1.3rem; */
+    }
+
+    .mercadoAlvo-right-lista img {
+        width: 65px;
+        height: 52px;
+    }
+
+    #mercadoAlvo h1 {
+        font-size: 3.1rem;
+    }
 
 
 
 
- /* -- FIM MERCADO ALVO -- */
-        
-   /* -- SERVIÇOS PRESTADOS -- */
-   #ServicosPrestados li {
-       margin-bottom: 50px;
-       font-size: 1.8rem;
+    /* -- FIM MERCADO ALVO -- */
+
+    /* -- SERVIÇOS PRESTADOS -- */
+    #ServicosPrestados li {
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+   /* -- CO-FUNDADORES -- */
+   .pessoa li {
+       font-size: 1.1rem;
+       margin-top: 8px;
+       width: 210px;
    }
 
-   /* -- FIM SERVIÇOS PRESTADOS -- */
-/* -- CO-FUNDADORES -- */
-.pessoa li {
-    font-size: 1.1rem;
-    margin-top: 8px;
-    width: 210px;
+   .coFundadores-heading {
+       font-size: 3.1rem;
+   }
+
+   .pessoa {
+       height: 600px;
+       width: 300px;
+   }
+
+   /* -- FIM CO-FUNDADORES -- */
+         /* -- AMBIENTE FIDIGITAL -- */
+    
+     
+         /* -- FIM AMBIENTE FIDIGITAL -- */
+    /* -- FIM MAIN -- */
 }
-.coFundadores-heading {
-    font-size: 3.1rem;
-}
-.pessoa {
-    height: 600px;
-    width: 300px;
-}
-/* -- FIM CO-FUNDADORES -- */
-        /* -- FIM MAIN -- */
-    }
+
 @media screen and (max-width: 1550px) {
     /* -- MAIN -- */
     /* -- HOME -- */
 
     .home-leftRight-container .left {
-            width: 600px;
-        }
+        width: 600px;
+  
+    }
 
     .home-leftRight-container .right {
-            /* border: 2px solid red; */
-            width: 400px;
-            height: 600px;
-            /* border-radius: 45px; */
-            border-radius: 25px;
-            overflow: hidden;
-            color: white;
-            box-shadow: 5px 10px 10px rgb(128, 128, 128);
-    
-        }
-    
-        .home-leftRight-container .right label {
-            font-size: 1.3rem;
-            width: 90%;
-        }
-    
-        .home-leftRight-container .right .top h1 {
-            text-align: center;
-            font-size: 1.6rem;
-        }
-    
-        .home-leftRight-container .left h1 {
-            font-size: 3.4rem;
+        /* border: 2px solid red; */
+        width: 400px;
+        height: 600px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 5px 10px 10px rgb(128, 128, 128);
+     
 
-        }
-    
-        .home-leftRight-container .left p {
-            font-weight: 500;
-            font-size: 1.1rem;
-    
-        }
-        .right #botao {
-            height: 60px;
-            top: 83%;
-            width: 200px;
-            font-size: 1.3rem;
-         }
-        /* -- FIM HOME -- */
-           /* -- SOLUCOES -- */
- .SP-solucoes-left h1 {
-     font-size: 2.8rem;
- }
+    }
 
- .SP-solucoes-left li {
-     font-size: 1.1rem;
- }
+    .home-leftRight-container .right label {
+        font-size: 1.3rem;
+        width: 90%;
+    }
 
- .img-shadow {
+    .home-leftRight-container .right .top h1 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
 
-     height: 280px;
-     top: 45px;
-     left: 50px;
-     width: 420px;
-     position: absolute;
-     background-color: #be8c3c;
-     border-radius: 25px;
- }
+    .home-leftRight-container .left h1 {
+        font-size: 3.4rem;
 
- .solucoes-right img {
-     width: 450px;
-     margin-top: 0px;
-     border-radius: 25px;
-     position: relative;
- }
-           /* -- FIM SOLUCOES -- */
+    }
 
-   /* -- MERCADO ALVO -- */ 
-.mercadoAlvo-imagem-container img {
-    height: 350px;
-}
+    .home-leftRight-container .left p {
+        font-weight: 500;
+        font-size: 1.1rem;
 
-.mercadoAlvo-image-shadow {
-    height: 320px;
-    top: 50px;
-    left: 40px;
-    width: 330px;
-}
+    }
 
-.mercadoAlvo-right-lista {
-    font-size: 1.4rem;
-}
+    .right #botao {
+        height: 60px;
+        top: 83%;
+        width: 200px;
+        font-size: 1.3rem;
+    }
 
-.mercadoAlvo-right-lista img {
-    width: 65px;
-    height: 52px;
-}
+    /* -- FIM HOME -- */
+    /* -- SOLUCOES -- */
+    .SP-solucoes-left h1 {
+        font-size: 2.8rem;
+    }
 
-#mercadoAlvo h1 {
-    font-size: 2.8rem;
-}
-   /* -- FIM MERCADO ALVO -- */  
-/* -- SERVIÇOS PRESTADOS -- */
-#ServicosPrestados h2 {
-    font-size: 1.8rem;
-}
-/* -- FIM SERVIÇOS PRESTADOS -- */
+    .SP-solucoes-left li {
+        font-size: 1.1rem;
+    }
+
+    .img-shadow {
+
+        height: 280px;
+        top: 45px;
+        left: 50px;
+        width: 420px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
+
+    .solucoes-right img {
+        width: 450px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    /* -- FIM SOLUCOES -- */
+
+    /* -- MERCADO ALVO -- */
+    .mercadoAlvo-imagem-container img {
+        height: 350px;
+    }
+
+    .mercadoAlvo-image-shadow {
+        height: 320px;
+        top: 50px;
+        left: 40px;
+        width: 330px;
+    }
+
+    .mercadoAlvo-right-lista {
+        font-size: 1.4rem;
+    }
+
+    .mercadoAlvo-right-lista img {
+        width: 65px;
+        height: 52px;
+    }
+
+    #mercadoAlvo h1 {
+        font-size: 2.8rem;
+    }
+
+    /* -- FIM MERCADO ALVO -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+    #ServicosPrestados h2 {
+        font-size: 1.8rem;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
 /* -- CO-FUNDADORES -- */
 
 .coFundadores-heading {
@@ -805,7 +902,10 @@ align-items: center;
 }
 
 /* -- FIM CO-FUNDADORES -- */
-            /* -- FIM MAIN -- */
+/* -- AMBIENTE FIDIGITAL -- */
+        
+ /* -- FIM AMBIENTE FIDIGITAL -- */
+    /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 1450px) {
@@ -813,50 +913,52 @@ align-items: center;
     /* -- HOME -- */
 
     .home-leftRight-container .left {
-            width: 550px;
-        }
+        width: 550px;
+    }
+
     .home-leftRight-container .right {
-            /* border: 2px solid red; */
-            width: 350px;
-            height: 550px;
-            /* border-radius: 45px; */
-            border-radius: 25px;
-            overflow: hidden;
-            color: white;
-            box-shadow: 5px 10px 10px rgb(128, 128, 128);
-    
-        }
-    
-        .home-leftRight-container .right label {
-            font-size: 1.2rem;
-            width: 90%;
-        }
-    
-        .home-leftRight-container .right .top h1 {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-    
-         .home-leftRight-container .left h1 {
-            font-size: 3.3rem;
+        /* border: 2px solid red; */
+        width: 350px;
+        height: 550px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 5px 10px 10px rgb(128, 128, 128);
 
-        } 
-    
-        .home-leftRight-container .left p {
-            font-weight: 500;
-            font-size: 1rem;
-    
-        }
-         
+    }
 
-         /* -- FIM HOME -- */
-         /* -- FIM MAIN -- */
+    .home-leftRight-container .right label {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .home-leftRight-container .right .top h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .home-leftRight-container .left h1 {
+        font-size: 3.3rem;
+
+    }
+
+    .home-leftRight-container .left p {
+        font-weight: 500;
+        font-size: 1rem;
+
+    }
+
+
+    /* -- FIM HOME -- */
+    /* -- FIM MAIN -- */
 
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
+
     /*  -- HEADER -- */
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
         width: 1000px;
@@ -864,350 +966,371 @@ align-items: center;
         /* border: 3px solid cyan; */
         margin: 0%;
     }
-        .nav-image-container h1 {
-           font-size: 20px;
-        }
-.nav-links p {
-       margin: 0 8px;
-       font-weight: 600;
-       font-size: 14px;
-   }
- .nav-image {
-     height: 60px;
-     width: 60px;
- }
-  .nav-image-container h1 {
-      color: #187b6f;
-      margin-left: 20px;
-      font-size: 2rem;
+
+    .nav-image-container h1 {
+        font-size: 20px;
+    }
+
+    .nav-links p {
+        margin: 0 8px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .nav-image {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-image-container h1 {
+        color: #187b6f;
+        margin-left: 20px;
+        font-size: 2rem;
+    }
+
+    .home-leftRight-container .left h1 {
+        font-size: 3rem;
+
+    }
+
+    /*  -- FIM HEADER -- */
+    /* --  MAIN -- */
+
+    /* -- HOME -- */
+
+    .home-leftRight-container {
+        /* border: 2px solid red; */
+        padding: 10% 8%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .home-leftRight-container .left {
+        width: 450px;
+        margin-right: 10px;
+    }
+
+
+
+
+    /* -- FIM HOME -- */
+    /* -- SOLUCOES -- */
+
+    .SP-solucoes-left h1 {
+        font-size: 2.6rem;
+    }
+
+    .SP-solucoes-left li {
+        font-size: 1rem;
+    }
+
+    .img-shadow {
+
+        height: 250px;
+        top: 45px;
+        left: 60px;
+        width: 360px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
+
+    .solucoes-right img {
+        width: 400px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
+    .mercadoAlvo-imagem-container img {
+        height: 330px;
+    }
+
+    .mercadoAlvo-image-shadow {
+        height: 300px;
+        top: 50px;
+        left: 40px;
+        width: 310px;
+    }
+
+    .mercadoAlvo-right-lista {
+        font-size: 1.3rem;
+    }
+
+    .mercadoAlvo-right-lista img {
+        width: 62px;
+        height: 50px;
+    }
+
+    #mercadoAlvo h1 {
+        font-size: 2.6rem;
+    }
+
+    /* -- FIM MERCADO ALVO -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+    #ServicosPrestados li {
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* -- SERVIÇOS PRESTADOS -- */
+    #ServicosPrestados h2 {
+        font-size: 1.6rem;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+
+
+
+  /* -- CO-FUNDADORES -- */
+
+  .coFundadores-heading {
+      font-size: 2.8rem;
   }
-  .home-leftRight-container .left h1 {
-      font-size: 3rem;
-     
-  }
- /*  -- FIM HEADER -- */
- /* --  MAIN -- */
- 
-/* -- HOME -- */
 
-.home-leftRight-container {
-    /* border: 2px solid red; */
-    padding: 10% 8%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(238, 238, 238);
-}
-.home-leftRight-container .left {
-    width: 450px;
-    margin-right: 10px;
-}
-
-
-
-
- /* -- FIM HOME -- */
- /* -- SOLUCOES -- */
-
- .SP-solucoes-left h1 {
-     font-size: 2.6rem;
- }
-
- .SP-solucoes-left li {
-     font-size: 1rem;
- }
-
- .img-shadow {
-
-     height: 250px;
-     top: 45px;
-     left: 60px;
-     width: 360px;
-     position: absolute;
-     background-color: #be8c3c;
-     border-radius: 25px;
- }
-
- .solucoes-right img {
-     width: 400px;
-     margin-top: 0px;
-     border-radius: 25px;
-     position: relative;
- }
-
- /* -- FIM SOLUCOES -- */
-   /* -- MERCADO ALVO -- */
-   .mercadoAlvo-imagem-container img {
-       height: 330px;
-   }
-
-   .mercadoAlvo-image-shadow {
-       height: 300px;
-       top: 50px;
-       left: 40px;
-       width: 310px;
-   }
-
-   .mercadoAlvo-right-lista {
-       font-size: 1.3rem;
-   }
-
-   .mercadoAlvo-right-lista img {
-       width: 62px;
-       height: 50px;
-   }
-
-   #mercadoAlvo h1 {
-       font-size: 2.6rem;
-   }
-
-   /* -- FIM MERCADO ALVO -- */
- /* -- SERVIÇOS PRESTADOS -- */
- #ServicosPrestados li {
-     margin-bottom: 50px;
-     font-size: 1.2rem;
- }
- /* -- SERVIÇOS PRESTADOS -- */
- #ServicosPrestados h2 {
-     font-size: 1.6rem;
- }
-
- /* -- FIM SERVIÇOS PRESTADOS -- */
-/* -- CO-FUNDADORES -- */
-
-.coFundadores-heading {
-    font-size: 2.6rem;
-}
-.pessoa li {
-    font-size: 1rem;
-    margin-top: 8px;
-    width: 210px;
-}
-
-
-.pessoa {
-    height: 550px;
-    width: 270px;
-}
-/* -- FIM CO-FUNDADORES -- */
- /* -- FIM MAIN -- */
+  /* -- FIM CO-FUNDADORES -- */
+    /* -- FIM MAIN -- */
 }
 
 
 @media screen and (max-width: 1000px) {
+
     /*  -- HEADER -- */
-    body{
+    body {
         margin-top: 0;
     }
 
     .nav-links-botoes-1 {
         display: none;
     }
+
     .nav-image {
         height: 70px;
         width: 70px;
-         }
+    }
 
     .nav-lista {
-        width:35px;
+        width: 35px;
         display: flex;
 
     }
-    .nav-lista:hover{
+
+    .nav-lista:hover {
         cursor: pointer;
     }
+
     .nav-links p {
         margin: 10 8px;
         font-weight: 600;
         font-size: 18px;
     }
+
     /*  -- FIM HEADER -- */
     /* -- MAIN -- */
     /* -- HOME -- */
-.home-logo h1 {
-    font-size: 6rem;
-}
+    .home-logo h1 {
+        font-size: 6rem;
+    }
 
-.home-logo h2 {
-    letter-spacing: 10px;
-    font-size: 1.01rem;
-}
-.home-logo img {
-    width: 250px;
-    margin-bottom: -50px;
-}
-.home-logo {
-    margin-top: -10px;
-}
-.home-leftRight-container .left {
-    width: 350px;
-    margin-right: 10px;
-}
-.home-leftRight-container {
-    /* border: 2px solid red; */
-    padding: 10% 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(238, 238, 238);
-}
-.home-leftRight-container .right {
-    /* border: 2px solid red; */
-    width: 300px;
-    height: 480px;
-    /* border-radius: 45px; */
-    border-radius: 25px;
-    overflow: hidden;
-    color: white;
-    box-shadow: 5px 10px 10px rgb(128, 128, 128);
+    .home-logo h2 {
+        letter-spacing: 10px;
+        font-size: 1.01rem;
+    }
 
-}
-.home-leftRight-container .left h1 {
-    font-size: 2.5rem;
+    .home-logo img {
+        width: 250px;
+        margin-bottom: -50px;
+    }
 
-}
- .home-leftRight-container .right label {
-     font-size: 1.1rem;
-     width: 90%;
- }
-  .right #botao {
-      height: 50px;
-      top: 84%;
-      width: 150px;
-      font-size: 1.3rem;
-  }
+    .home-logo {
+        margin-top: -10px;
+    }
+
+    .home-leftRight-container .left {
+        width: 350px;
+        margin-right: 10px;
+    }
+
+    .home-leftRight-container {
+        /* border: 2px solid red; */
+        padding: 10% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .home-leftRight-container .right {
+        /* border: 2px solid red; */
+        width: 300px;
+        height: 480px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 5px 10px 10px rgb(128, 128, 128);
+
+    }
+
+    .home-leftRight-container .left h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .home-leftRight-container .right label {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .right #botao {
+        height: 50px;
+        top: 84%;
+        width: 150px;
+        font-size: 1.3rem;
+    }
 
     /* -- FIM HOME -- */
- /* -- SOLUCOES -- */
-#solucoes {
-    /* border: 2px solid cyan; */
-    /* height: 767px; */
-    background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-    display: flex;
-    padding: 5% 5%;
-}
-.SP-solucoes-left {
+    /* -- SOLUCOES -- */
+    #solucoes {
+        /* border: 2px solid cyan; */
+        /* height: 767px; */
+        background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+        display: flex;
+        padding: 5% 5%;
+    }
 
-    margin-right: 2%;
-}
- .SP-solucoes-left h1 {
-     font-size: 2.4rem;
- }
+    .SP-solucoes-left {
 
- .SP-solucoes-left li {
-     font-size: 1rem;
-     margin-top: 20px;
- }
+        margin-right: 2%;
+    }
 
- .img-shadow {
+    .SP-solucoes-left h1 {
+        font-size: 2.4rem;
+    }
 
-     height: 210px;
-     top: 45px;
-     left: 65px;
-     width: 300px;
-     position: absolute;
-     background-color: #be8c3c;
-     border-radius: 25px;
- }
+    .SP-solucoes-left li {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
 
- .solucoes-right img {
-     width: 350px;
-     margin-top: 0px;
-     border-radius: 25px;
-     position: relative;
- }
-        
+    .img-shadow {
+
+        height: 210px;
+        top: 45px;
+        left: 65px;
+        width: 300px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
+
+    .solucoes-right img {
+        width: 350px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
+
     /* -- FIM SOLUCOES -- */
-   /* -- MERCADO ALVO -- */
-   .mercadoAlvo-imagem-container img {
-       height: 330px;
-   }
+    /* -- MERCADO ALVO -- */
+    .mercadoAlvo-imagem-container img {
+        height: 330px;
+    }
 
-   .mercadoAlvo-image-shadow {
-       height: 300px;
-       top: 50px;
-       left: 40px;
-       width: 310px;
-   }
+    .mercadoAlvo-image-shadow {
+        height: 300px;
+        top: 50px;
+        left: 40px;
+        width: 310px;
+    }
 
-   .mercadoAlvo-right-lista {
-       font-size: 1.1rem;
-   }
+    .mercadoAlvo-right-lista {
+        font-size: 1.1rem;
+    }
 
-   .mercadoAlvo-right-lista img {
-       width: 62px;
-       height: 50px;
-   }
+    .mercadoAlvo-right-lista img {
+        width: 62px;
+        height: 50px;
+    }
 
-   #mercadoAlvo h1 {
-       font-size: 2.4rem;
-   }
-#mercadoAlvo {
+    #mercadoAlvo h1 {
+        font-size: 2.4rem;
+    }
 
-    padding-top: 8%;
-    padding-bottom: 2%;
-    padding-right: 5%;
-    padding-left: 5%;
-    /* display: flex; */
-    align-items: center;
-    background-color: rgb(238, 238, 238);
+    #mercadoAlvo {
 
-}
+        padding-top: 8%;
+        padding-bottom: 2%;
+        padding-right: 5%;
+        padding-left: 5%;
+        /* display: flex; */
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
 
-   /* -- FIM MERCADO ALVO -- */
- /* -- SERVIÇOS PRESTADOS -- */
- #ServicosPrestados li {
-     margin-bottom: 50px;
-     font-size: 1.2rem;
- }
- .SP-right {
-     /* padding: 0% 10%; */
-     height: 80%;
+    /* -- FIM MERCADO ALVO -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+    #ServicosPrestados li {
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+    }
 
- }
- #ServicosPrestados{
-    padding:5% 5%;
- }
- .SP-right-image-container-one {
-     position: relative
- }
- .SP-right-image-container-one img {
+    .SP-right {
+        /* padding: 0% 10%; */
+        height: 80%;
 
-     width: 250px;
-     position: relative;
-     border-radius: 25px;
- }
+    }
 
+    #ServicosPrestados {
+        padding: 5% 5%;
+    }
 
+    .SP-right-image-container-one {
+        position: relative
+    }
 
- .SP-right-image-container-one .SP-image-shadow {
-     height: 235px;
-     top: 35px;
-     left: 40px;
-     width: 230px;
- }
+    .SP-right-image-container-one img {
 
- .SP-right-image-container-two img {
-
-     width: 350px;
-     position: relative;
-     border-radius: 25px;
- }
- .SP-right-image-container-two .SP-image-shadow {
-     height: 220px;
-     top: 35px;
-     left: 40px;
-     width: 330px;
- }
-
- #ServicosPrestados h2 {
-     font-size: 1.5rem;
- }
+        width: 250px;
+        position: relative;
+        border-radius: 25px;
+    }
 
 
 
- /* -- FIM SERVIÇOS PRESTADOS -- */
+    .SP-right-image-container-one .SP-image-shadow {
+        height: 235px;
+        top: 35px;
+        left: 40px;
+        width: 230px;
+    }
+
+    .SP-right-image-container-two img {
+
+        width: 350px;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 220px;
+        top: 35px;
+        left: 40px;
+        width: 330px;
+    }
+
+    #ServicosPrestados h2 {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
  /* -- CO-FUNDADORES -- */
 
  .coFundadores-heading {
@@ -1225,24 +1348,29 @@ align-items: center;
      height: 450px;
      width: 250px;
  }
- #cofundadores{
-    padding: 5% 3%;
+
+ #cofundadores {
+     padding: 5% 3%;
  }
 
  /* -- FIM CO-FUNDADORES -- */
     /* -- FIM MAIN -- */
 
 }
+
 @media screen and (max-width: 910px) {
-/* -- FIM SERVIÇOS PRESTADOS -- */
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
     /* -- FIM MAIN -- */
     #ServicosPrestados h2 {
-            font-size: 1.4rem;
-        }
- #ServicosPrestados li {
-     margin-bottom: 50px;
-     font-size: 1.1rem;
- }
+        font-size: 1.4rem;
+    }
+
+    #ServicosPrestados li {
+        margin-bottom: 50px;
+        font-size: 1.1rem;
+    }
+
     /* -- FIM SERVIÇOS PRESTADOS -- */
  /* -- CO-FUNDADORES -- */
 
@@ -1251,8 +1379,8 @@ align-items: center;
      margin: 0;
  }
 
- .pessoa-lista h2{
-    font-size: 1.3rem;
+ .pessoa-lista h2 {
+     font-size: 1.3rem;
  }
 
  .pessoa li {
@@ -1270,26 +1398,30 @@ align-items: center;
  #cofundadores {
      padding: 5% 3%;
  }
-.pessoa-imagem img {
-    border-radius: 15px;
-    height: 74%
-}
+
+ .pessoa-imagem img {
+     border-radius: 15px;
+     height: 74%
+ }
 
  /* -- FIM CO-FUNDADORES -- */
 
     /* -- FIM MAIN -- */
 }
+
 @media screen and (max-width: 840px) {
+
     /* -- MAIN -- */
     /* -- SOLUCOES -- */
-#solucoes {
+    #solucoes {
         /* border: 2px solid cyan; */
         /* height: 767px; */
         background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
         display: flex;
         padding: 10% 5%;
     }
-.solucoes-leftRight-container {
+
+    .solucoes-leftRight-container {
         /* padding: 0% 10%; */
         height: 100%;
         width: 100%;
@@ -1298,52 +1430,56 @@ align-items: center;
         justify-content: space-between;
         align-items: center;
     }
- .img-shadow {
 
-     height: 330px;
-     top: 72px;
-     left: 70px;
-     width: 500px;
-     position: absolute;
-     background-color: #be8c3c;
-     border-radius: 25px;
- }
+    .img-shadow {
 
- .solucoes-right img {
-     width: 550px;
-     margin-top: 0px;
-     border-radius: 25px;
-     position: relative;
- }
-.SP-solucoes-left {
-margin-top: 10%;
-margin-right: 0%;
-}
+        height: 330px;
+        top: 72px;
+        left: 70px;
+        width: 500px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
-.SP-solucoes-left h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 80px;
-}
+    .solucoes-right img {
+        width: 550px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
 
-.SP-solucoes-left li {
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
+    .SP-solucoes-left {
+        margin-top: 10%;
+        margin-right: 0%;
+    }
 
-        
-    
-        /* -- FIM SOLUCOES -- */
-   /* -- MERCADO ALVO -- */
-   #mercadoAlvo{
-    display: flex;
-    flex-direction: column-reverse;
-   }
-   #mercadoAlvo h1{
-    margin-bottom: 10%;
-    font-size: 3rem;
-   }
+    .SP-solucoes-left h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+
+    .SP-solucoes-left li {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+
+
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
+    #mercadoAlvo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #mercadoAlvo h1 {
+        margin-bottom: 10%;
+        font-size: 3rem;
+    }
+
     .mercadoAlvo-left {
         position: relative;
         display: flex;
@@ -1351,190 +1487,210 @@ margin-right: 0%;
         margin-bottom: 8%;
         /* margin-top: 5%; */
     }
-    .mercadoAlvo-right{
+
+    .mercadoAlvo-right {
         margin-left: 0;
         margin-top: 5%;
     }
 
-   .mercadoAlvo-image-shadow {
-       height: 395px;
-       top: 50px;
-       left: 40px;
-       width: 400px;
+    .mercadoAlvo-image-shadow {
+        height: 395px;
+        top: 50px;
+        left: 40px;
+        width: 400px;
+    }
+
+    .mercadoAlvo-right-lista {
+        font-size: 1.3rem;
+    }
+
+    .mercadoAlvo-right-lista img {
+        width: 62px;
+        height: 50px;
+
+    }
+
+
+
+    #mercadoAlvo {
+
+        padding-top: 8%;
+        padding-bottom: 2%;
+        padding-right: 5%;
+        padding-left: 5%;
+        /* display: flex; */
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+
+
+    }
+
+    .mercadoAlvo-leftRight-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .mercadoAlvo-imagem-container img {
+        height: 420px;
+        box-shadow: -3px -3px 30px rgb(123, 123, 123);
+    }
+
+    /* -- FIM MERCADO ALVO -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+    /* -- MAIN -- */
+
+    #ServicosPrestados h2 {
+        font-size: 1.4rem;
+    }
+
+    #ServicosPrestados h1 {
+        margin-bottom: 50px;
+        margin-top: 10%
+    }
+
+    ;
+
+    #ServicosPrestados li {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+    .SP-leftRight-container {
+        /* padding: 0% 10%; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .SP-solucoes-left {
+        margin-top: 0;
+    }
+
+    #ServicosPrestados {
+        padding-top: 300px;
+    }
+
+    .SP-left {
+        margin-bottom: 50px;
+    }
+
+    .SP-right {
+
+        height: 100%;
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 0%;
+
+    }
+
+    .SP-right-image-container-one img {
+
+        width: 200px;
+        position: relative;
+        border-radius: 25px;
+    }
+
+
+
+    .SP-right-image-container-one .SP-image-shadow {
+        height: 185px;
+        top: 35px;
+        left: 40px;
+        width: 180px;
+    }
+
+    .SP-right-image-container-two img {
+
+        width: 300px;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 185px;
+        top: 30px;
+        left: 40px;
+        width: 280px;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+   /* -- CO-FUNDADORES -- */
+
+   .coFundadores-heading {
+       font-size: 3rem;
+       margin: 15px;
    }
 
-   .mercadoAlvo-right-lista {
-       font-size: 1.3rem;
-   }
-
-   .mercadoAlvo-right-lista img {
-       width: 62px;
-       height: 50px;
-    
-   }
-
-  
-
-   #mercadoAlvo {
-
-       padding-top: 8%;
-       padding-bottom: 2%;
-       padding-right: 5%;
-       padding-left: 5%;
-       /* display: flex; */
-       align-items: center;
-       background-color: rgb(238, 238, 238);
-
-
-   }
-   .mercadoAlvo-leftRight-container {
-       display: flex;
+   .coFundadores-imagens {
        flex-direction: column;
-       justify-content: space-between;
-       width: 100%;
-       margin-bottom: 50px;
+       align-items: center;
+
    }
-.mercadoAlvo-imagem-container img {
-    height: 420px;
-    box-shadow: -3px -3px 30px rgb(123, 123, 123);
+
+
+   .pessoa li {
+       font-size: 1.2rem;
+       margin-top: 7px;
+       width: 80%;
+   }
+
+
+   .pessoa {
+       height: 500px;
+       width: 300px;
+       margin-bottom: 10%;
+   }
+
+   #cofundadores {
+       padding: 5% 3%;
+   }
+
+   .pessoa-imagem img {
+       width: 200px;
+       height: 80%;
+   }
+
+   .pessoa-lista ul {
+       margin: 0;
+   }
+
+   /* -- FIM CO-FUNDADORES -- */
+    /* -- FIM MAIN -- */
 }
-  
-   /* -- FIM MERCADO ALVO -- */
-/* -- SERVIÇOS PRESTADOS -- */
-/* -- MAIN -- */
 
-#ServicosPrestados h2 {
-    font-size: 1.4rem;
-}
-#ServicosPrestados h1 {
-    margin-bottom: 50px;
-    margin-top: 10%};
+@media screen and (max-width: 780px) {
+    /* -- MAIN -- */
+    /* -- SERVIÇOS PRESTADOS -- */
 
-#ServicosPrestados li {
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-.SP-leftRight-container {
-    /* padding: 0% 10%; */
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-.SP-solucoes-left{
-   margin-top: 0;
-}
-#ServicosPrestados{
-    padding-top: 300px;
-}
-.SP-left {
-    margin-bottom: 50px;
-}
-.SP-right {
+    .SP-right {
 
-    height: 100%;
-    display: flex;
-    width: 80%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
-    margin-left: 0%;
-
-}
- .SP-right-image-container-one img {
-
-     width: 200px;
-     position: relative;
-     border-radius: 25px;
- }
-
-
-
- .SP-right-image-container-one .SP-image-shadow {
-     height: 185px;
-     top: 35px;
-     left: 40px;
-     width: 180px;
- }
-
- .SP-right-image-container-two img {
-
-     width: 300px;
-     position: relative;
-     border-radius: 25px;
- }
-
- .SP-right-image-container-two .SP-image-shadow {
-     height: 185px;
-     top: 30px;
-     left: 40px;
-     width: 280px;
- }
-
-/* -- FIM SERVIÇOS PRESTADOS -- */
- /* -- CO-FUNDADORES -- */
-
- .coFundadores-heading {
-     font-size: 3rem;
-    margin: 15px;    
+        height: 80%;
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 0%;
     }
- .coFundadores-imagens{
-    flex-direction: column;
-    align-items: center;
 
- }
-
-
- .pessoa li {
-     font-size: 1.2rem;
-     margin-top: 7px;
-     width: 80%;
- }
-
-
- .pessoa {
-     height: 500px;
-     width: 300px;
-     margin-bottom: 10%;
- }
-
- #cofundadores {
-     padding: 5% 3%;
- }
- .pessoa-imagem img{
-    width:200px;
-    height: 80%;
- }
- .pessoa-lista ul{
-    margin: 0;
- }
-
- /* -- FIM CO-FUNDADORES -- */
-       /* -- FIM MAIN -- */ 
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+    /* -- FIM MAIN -- */
 }
-@media screen and (max-width: 780px){
-/* -- MAIN -- */    
-/* -- SERVIÇOS PRESTADOS -- */
 
-.SP-right {
-    
-    height: 80%;
-    display: flex;
-    width: 90%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 0%;
-    }
-/* -- FIM SERVIÇOS PRESTADOS -- */
-/* -- FIM MAIN -- */
-}
 @media screen and (max-width: 760px) {
+
     /* -- MAIN --*/
     /* -- HOME -- */
-.home-leftRight-container .right {
+    .home-leftRight-container .right {
         /* border: 2px solid red; */
         width: 250px;
         height: 400px;
@@ -1545,360 +1701,379 @@ margin-right: 0%;
         box-shadow: 5px 10px 10px rgb(128, 128, 128);
 
     }
+
     .right #botao {
         height: 40px;
         top: 85.5%;
         width: 100px;
         font-size: 1rem;
-    
-          }
+
+    }
+
     .home-leftRight-container .right form {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 75%;
         margin-top: -15%;
-        }
+    }
+
     .home-leftRight-container .left h1 {
         font-size: 2.2rem;
     }
+
     /* -- FIM HOME -- */
-   /* -- SOLUCOES -- */
-   #solucoes {
-       /* border: 2px solid cyan; */
-       /* height: 767px; */
-       background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-       display: flex;
-       padding: 10% 5%;
-   }
-   .solucoes-leftRight-container {
-       /* padding: 0% 10%; */
-       height: 100%;
-       width: 100%;
-       display: flex;
-       flex-direction: column-reverse;
-       justify-content: space-between;
-       align-items: center;
-   }
+    /* -- SOLUCOES -- */
+    #solucoes {
+        /* border: 2px solid cyan; */
+        /* height: 767px; */
+        background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+        display: flex;
+        padding: 10% 5%;
+    }
 
-   .img-shadow {
+    .solucoes-leftRight-container {
+        /* padding: 0% 10%; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-       height: 300px;
-       top: 66px;
-       left: 70px;
-       width: 450px;
-       position: absolute;
-       background-color: #be8c3c;
-       border-radius: 25px;
-   }
+    .img-shadow {
 
-   .solucoes-right img {
-       width: 500px;
-       margin-top: 0px;
-       border-radius: 25px;
-       position: relative;
-   }
+        height: 300px;
+        top: 66px;
+        left: 70px;
+        width: 450px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
-   .SP-solucoes-left {
-       margin-top: 10%;
-       margin-right: 0%;
-   }
+    .solucoes-right img {
+        width: 500px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
 
-   .SP-solucoes-left h1 {
-       font-size: 3rem;
-       text-align: center;
-       margin-bottom: 30px;
-   }
+    .SP-solucoes-left {
+        margin-top: 10%;
+        margin-right: 0%;
+    }
 
-   .SP-solucoes-left li {
-       font-size: 1.2rem;
-       margin-top: 20px;
-   }
+    .SP-solucoes-left h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .SP-solucoes-left li {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
 
 
-   /* -- FIM SOLUCOES -- */
-   /* -- MERCADO ALVO -- */
-   #mercadoAlvo {
-       display: flex;
-       flex-direction: column-reverse;
-   }
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
+    #mercadoAlvo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-   #mercadoAlvo h1 {
-       margin-bottom: 10%;
-       font-size: 3rem;
-   }
+    #mercadoAlvo h1 {
+        margin-bottom: 10%;
+        font-size: 3rem;
+    }
 
-   .mercadoAlvo-left {
-       position: relative;
-       display: flex;
-       justify-content: center;
-       margin-bottom: 8%;
-       /* margin-top: 5%; */
-   }
+    .mercadoAlvo-left {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8%;
+        /* margin-top: 5%; */
+    }
 
-   .mercadoAlvo-right {
-       margin-left: 0;
-   }
+    .mercadoAlvo-right {
+        margin-left: 0;
+    }
 
-   .mercadoAlvo-image-shadow {
-       height: 375px;
-       top: 50px;
-       left: 40px;
-       width: 385px;
-   }
+    .mercadoAlvo-image-shadow {
+        height: 375px;
+        top: 50px;
+        left: 40px;
+        width: 385px;
+    }
 
-   .mercadoAlvo-imagem-container img {
-       height: 400px;
-       box-shadow: -3px -3px 30px rgb(123, 123, 123);
-   }
+    .mercadoAlvo-imagem-container img {
+        height: 400px;
+        box-shadow: -3px -3px 30px rgb(123, 123, 123);
+    }
 
-   /* -- FIM MERCADO ALVO -- */
-/* -- SERVIÇOS PRESTADOS -- */
-.SP-solucoes-left {
-    margin-top: 0;
-}
-/* -- FIM SERVIÇOS PRESTADOS -- */ 
-   .SP-solucoes-left {
-     margin-top: 0;
- }
+    /* -- FIM MERCADO ALVO -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+    .SP-solucoes-left {
+        margin-top: 0;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+    .SP-solucoes-left {
+        margin-top: 0;
+    }
+
     /* -- FIM MAIN -- */
 }
+
 @media screen and (max-width: 720px) {
     /* -- MAIN -- */
     /* -- SERVIÇOS PRESTADOS -- */
-/* #ServicosPrestados{
+    /* #ServicosPrestados{
    padding-top: 0; 
 } */
 
-#ServicosPrestados h1 {
+    #ServicosPrestados h1 {
         font-size: 2.6rem;
         margin-top: 0;
     }
-#ServicosPrestados li {
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-}
-#ServicosPrestados{
-    padding-top: 100px;
-}
+
+    #ServicosPrestados li {
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+    }
+
+    #ServicosPrestados {
+        padding-top: 100px;
+    }
 
 
-.SP-right {
-   
-    height: fit-content;
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 0%;
-   position: relative;
-   margin-bottom: 20px;
-   /* top: 100px;  */
+    .SP-right {
 
-}
- .SP-right-image-container-one{
-    margin-top: 10%;
-    display: none;
- }
+        height: fit-content;
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 0%;
+        position: relative;
+        margin-bottom: 20px;
+        /* top: 100px;  */
+
+    }
+
+    .SP-right-image-container-one {
+        margin-top: 10%;
+        display: none;
+    }
 
 
 
- .SP-right-image-container-two img {
+    .SP-right-image-container-two img {
 
-     width: 450px;
-     position: relative;
-     border-radius: 25px;
- }
+        width: 450px;
+        position: relative;
+        border-radius: 25px;
+    }
 
- .SP-right-image-container-two .SP-image-shadow {
-     height: 290px;
-     top: 35px;
-     left: 40px;
-     width: 430px;
- }
- .SP-leftRight-container{
-    margin-top: 0px;
-    height: fit-content;
- }
-#ServicosPrestados{
-    height: fit-content;
-}
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 290px;
+        top: 35px;
+        left: 40px;
+        width: 430px;
+    }
+
+    .SP-leftRight-container {
+        margin-top: 0px;
+        height: fit-content;
+    }
+
+    #ServicosPrestados {
+        height: fit-content;
+    }
+
     /* -- FIM SERVIÇOS PRESTADOS -- */
-    
+
     /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 700px) {
     /* -- MAIN --*/
-        /* -- HOME -- */
-        
-        .home-leftRight-container {
-                /* border: 2px solid red; */
-                padding: 0% 5%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                background-color: rgb(238, 238, 238);
-            }
-        .home-leftRight-container .left {
-             width: 100%;
-            margin-right: 10px;
-            height: 15%;
-            align-items: center;
-            margin-bottom: 10%;
-        }
-        .home-leftRight-container .left h1 {
-            font-size: 2.2rem;
-            }
-        .home-leftRight-container .left h1 {
+    /* -- HOME -- */
+
+    .home-leftRight-container {
+        /* border: 2px solid red; */
+        padding: 0% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .home-leftRight-container .left {
+        width: 100%;
+        margin-right: 10px;
+        height: 15%;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .home-leftRight-container .left h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-leftRight-container .left h1 {
         font-size: 3rem;
         text-align: center;
         margin-bottom: 5%;
-        }    
-        .home-leftRight-container .left p {
-            text-align: center;
-            width: 90%;
-            font-size: 1.2rem;
-        }
-        .home-leftRight-container .right {
-            width: 85%;
-            margin-bottom: 10%;
-            height: 450px;
-            /* border-radius: 45px; */
-            border-radius: 25px;
-            overflow: hidden;
-            color: white;
-            box-shadow: 5px 10px 10px rgb(128, 128, 128);
+    }
 
-        }
+    .home-leftRight-container .left p {
+        text-align: center;
+        width: 90%;
+        font-size: 1.2rem;
+    }
 
-        
-        .right #botao {
-            height: 60px;
-            position: absolute;
-            top: 81.5%;
-            width: 200px;
-            background-color: #edb865;
-            border-radius: 10px;
-            border: none;
-            color: white;
-            font-weight: 800;
-            font-size: 1.3rem;
-        }
-        .home-leftRight-container .right .top h1 {
-            text-align: center;
-            font-size: 1.6rem;
-            width: 80%;
-        }
-    
-   
+    .home-leftRight-container .right {
+        width: 85%;
+        margin-bottom: 10%;
+        height: 450px;
+        /* border-radius: 45px; */
+        border-radius: 25px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 5px 10px 10px rgb(128, 128, 128);
 
+    }
+    .right #botao {
+        height: 60px;
+        position: absolute;
+        top: 81.5%;
+        width: 200px;
+        background-color: #edb865;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    .home-leftRight-container .right .top h1 {
+        text-align: center;
+        font-size: 1.6rem;
+        width: 80%;
+    }
     /* -- FIM HOME -- */
-/* -- SOLUCOES -- */
-   .img-shadow {
+    /* -- SOLUCOES -- */
+    .img-shadow {
 
-       height: 260px;
-       top: 66px;
-       left: 70px;
-       width: 400px;
-       position: absolute;
-       background-color: #be8c3c;
-       border-radius: 25px;
-   }
+        height: 260px;
+        top: 66px;
+        left: 70px;
+        width: 400px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
-   .solucoes-right img {
-       width: 450px;
-       margin-top: 0px;
-       border-radius: 25px;
-       position: relative;
-   }
+    .solucoes-right img {
+        width: 450px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
 
-   .SP-solucoes-left {
-       margin-top: 10% !important;
-       margin-right: 0%;
-   }
+    .SP-solucoes-left {
+        margin-top: 10% !important;
+        margin-right: 0%;
+    }
 
-   .SP-solucoes-left h1 {
-       font-size: 2.6rem;
-       text-align: center;
-       margin-bottom: 30px;
-       margin-top: 20px;
-   }
+    .SP-solucoes-left h1 {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
 
-   .SP-solucoes-left li {
-       font-size: 1rem;
-       margin-top: 20px;
-   }
-
-
-   /* -- FIM SOLUCOES -- */
-   /* -- MERCADO ALVO -- */
+    .SP-solucoes-left li {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
 
 
-   #mercadoAlvo h1 {
-       margin-bottom: 8%;
-       font-size: 2.6rem;
-   }
-   .mercadoAlvo-right{
-    margin-top: 10%;
-   }
-   #mercadoAlvo {
-       padding-top: 5%;
-   }
-        /* -- SERVIÇOS PRESTADOS -- */
-    
-.SP-right {
-    height: 80%;
-    display: flex;
-    width: 90%;
-    align-items: flex-start;
-    margin-left: 0%;
-}
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
 
-#ServicosPrestados{
-    padding: 10% 5%;
-}
-.SP-text {
-   
-}
 
- .SP-right-image-container-two img {
+    #mercadoAlvo h1 {
+        margin-bottom: 8%;
+        font-size: 2.6rem;
+    }
 
-     width: 450px;
-     position: relative;
-     border-radius: 25px;
- }
- .SP-solucoes-left{
-    margin-top: 0;
- }
+    .mercadoAlvo-right {
+        margin-top: 10%;
+    }
 
- .SP-right-image-container-two .SP-image-shadow {
-     height: 290px;
-     top: 35px;
-     left: 40px;
-     width: 430px;
- }
-.SP-text {
-    margin-top: 0 !important;
- }
-/* -- FIM SERVIÇOS PRESTADOS -- */
+    #mercadoAlvo {
+        padding-top: 5%;
+    }
 
-   /* FIM MERCADO ALVO -- */
-        /* -- FIM MAIN -- */
+    /* -- SERVIÇOS PRESTADOS -- */
+
+    .SP-right {
+        height: 80%;
+        display: flex;
+        width: 90%;
+        align-items: flex-start;
+        margin-left: 0%;
+    }
+
+    #ServicosPrestados {
+        padding: 10% 5%;
+    }
+
+    .SP-text {}
+
+    .SP-right-image-container-two img {
+
+        width: 450px;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .SP-solucoes-left {
+        margin-top: 0;
+    }
+
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 290px;
+        top: 35px;
+        left: 40px;
+        width: 430px;
+    }
+
+    .SP-text {
+        margin-top: 0 !important;
+    }
+
+    /* -- FIM SERVIÇOS PRESTADOS -- */
+
+    /* FIM MERCADO ALVO -- */
+    /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 670px) {
-/* -- MAIN -- */
+    /* -- MAIN -- */
 
     /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 590px) {
-/* -- MAIN -- */
+    /* -- MAIN -- */
     /* -- SERVIÇOS PRESTADOS -- */
 
- /*
+    /*
     .SP-right-image-container-one img {
 
         width: 170px;
@@ -1934,9 +2109,10 @@ margin-right: 0%;
 }
 
 @media screen and (max-width: 552px) {
-/* -- MAIN -- */    
-/* -- HOME -- */
-.right #botao {
+
+    /* -- MAIN -- */
+    /* -- HOME -- */
+    .right #botao {
         height: 60px;
         position: absolute;
         top: 81.5%;
@@ -1948,287 +2124,288 @@ margin-right: 0%;
         font-weight: 800;
         font-size: 1.3rem;
     }
-/* -- FIM HOME -- */
-   /* -- SOLUCOES -- */
-   .solucoes-leftRight-container {
-       /* padding: 0% 10%; */
-       height: 100%;
-       width: 100%;
-       display: flex;
-       flex-direction: column-reverse;
-       justify-content: space-between;
-       align-items: center;
-   }
 
-   .img-shadow {
+    /* -- FIM HOME -- */
+    /* -- SOLUCOES -- */
+    .solucoes-leftRight-container {
+        /* padding: 0% 10%; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-       height: 230px;
-       top: 66px;
-       left: 70px;
-       width: 355px;
-       position: absolute;
-       background-color: #be8c3c;
-       border-radius: 25px;
-   }
+    .img-shadow {
 
-   .solucoes-right img {
-       width: 400px;
-       margin-top: 0px;
-       border-radius: 25px;
-       position: relative;
-   }
+        height: 230px;
+        top: 66px;
+        left: 70px;
+        width: 355px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
-   .SP-solucoes-left {
-       margin-top: 10%;
-       margin-right: 0%;
-   }
+    .solucoes-right img {
+        width: 400px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
 
-   .SP-solucoes-left h1 {
-       font-size: 2.6rem;
-       text-align: center;
-       margin-bottom: 30px;
-   }
+    .SP-solucoes-left {
+        margin-top: 10%;
+        margin-right: 0%;
+    }
 
-   .SP-solucoes-left li {
-       font-size: 1rem;
-       margin-top: 20px;
-   }
+    .SP-solucoes-left h1 {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-
-   /* -- FIM SOLUCOES -- */
-/* -- MERCADO ALVO -- */ 
-.mercadoAlvo-image-shadow {
-    height: 325px;
-    top: 50px;
-    left: 40px;
-    width: 335px;
-}
-.mercadoAlvo-right-lista {
-    font-size: 1.2rem;
-}
-.mercadoAlvo-imagem-container img {
-    height: 350px;
-    box-shadow: -3px -3px 30px rgb(123, 123, 123);
-}
-/* FIM MERCADO ALVO -- */  
-/*-- SERVIÇOS PRESTADOS -- */
- .SP-right-image-container-two {
-
-    margin-top: 0px;
+    .SP-solucoes-left li {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
 
 
-}
+    /* -- FIM SOLUCOES -- */
+    /* -- MERCADO ALVO -- */
+    .mercadoAlvo-image-shadow {
+        height: 325px;
+        top: 50px;
+        left: 40px;
+        width: 335px;
+    }
 
-.SP-right{
-    /* top: 140px; */
+    .mercadoAlvo-right-lista {
+        font-size: 1.2rem;
+    }
 
-    position: relative;
-    margin-bottom: 0px;
-}
-.SP-leftRight-container{
-    height: fit-content;
-}
-.SP-leftRight-container h1{
-   position: relative;
-   /* top: 30px; */
+    .mercadoAlvo-imagem-container img {
+        height: 350px;
+        box-shadow: -3px -3px 30px rgb(123, 123, 123);
+    }
 
-}
-.SP-left-lista-container{
-    margin-top: 0px;
-}
-.SP-right-image-container-two img {
+    /* FIM MERCADO ALVO -- */
+    /*-- SERVIÇOS PRESTADOS -- */
+    .SP-right-image-container-two {
 
-    width: 400px;
-    position: relative;
-    border-radius: 25px;
-}
-.SP-image-shadow img{
-    margin-top: 20px;
-}
+        margin-top: 0px;
 
-.SP-right-image-container-two .SP-image-shadow {
-    height: 250px;
-    top: 35px;
-    left: 40px;
-    width: 380px;
-} 
 
+    }
+
+    .SP-right {
+        /* top: 140px; */
+
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .SP-leftRight-container {
+        height: fit-content;
+    }
+
+    .SP-leftRight-container h1 {
+        position: relative;
+        /* top: 30px; */
+
+    }
+
+    .SP-left-lista-container {
+        margin-top: 0px;
+    }
+    .SP-right-image-container-two img {
+        width: 400px;
+        position: relative;
+        border-radius: 25px;
+    }
+    .SP-image-shadow img {
+        margin-top: 20px;
+    }
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 250px;
+        top: 35px;
+        left: 40px;
+        width: 380px;
+    }
 /* -- FIM SERVIÇOS PRESTADOS --*/
- /* -- CO-FUNDADORES -- */
+/* -- CO-FUNDADORES -- */
+.coFundadores-heading {
+    font-size: 2.6rem;
+    margin: 25px 0px;
+}
+.coFundadores-imagens {
+    flex-direction: column;
+    align-items: center;
+}
+.pessoa li {
+    font-size: 1.2rem;
+    margin-top: 7px;
+    width: 80%;
+}
+.pessoa {
+    height: 500px;
+    width: 300px;
+    margin-bottom: 10%;
+}
 
- .coFundadores-heading {
-     font-size: 2.6rem;
-     margin: 25px 0px;
- }
+#cofundadores {
+    padding: 5% 3%;
+}
 
- .coFundadores-imagens {
-     flex-direction: column;
-     align-items: center;
+.pessoa-imagem img {
+    width: 200px;
+    height: 80%;
+}
 
- }
+.pessoa-lista ul {
+    margin: 0;
+}
 
-
- .pessoa li {
-     font-size: 1.2rem;
-     margin-top: 7px;
-     width: 80%;
- }
-
-
- .pessoa {
-     height: 500px;
-     width: 300px;
-     margin-bottom: 10%;
- }
-
- #cofundadores {
-     padding: 5% 3%;
- }
-
- .pessoa-imagem img {
-     width: 200px;
-     height: 80%;
- }
-
- .pessoa-lista ul {
-     margin: 0;
- }
-
- /* -- FIM CO-FUNDADORES -- */
-/* -- FIM MAIN -- */    
+/* -- FIM CO-FUNDADORES -- */
+    /* -- FIM MAIN -- */
 }
 
 
 
 @media screen and (max-width: 510px) {
-    body{
-        margin-top:-91px;
+    body {
+        margin-top: -80px;
+        width: 100%;
     }
+
     /*  -- HEADER -- */
+
     .nav-links {
-            display: flex;
-            /* border: 1px solid red; */
-            align-items: center;
-            margin-right: 15px;
-            position:unset;
+        display: flex;
+
+        align-items: center;
+        margin-right: 15px;
+        position: unset;
     }
     .nav-links-botoes-2 {
         width: 350px;
+
         top: 100px;
         left: 50%;
         transform: translate(-50%, 0%);
     }
     /*  -- FIM HEADER -- */
-        /* -- MAIN --*/
-        /* -- HOME -- */
-  .home-leftRight-container .right .top h1 {
-      text-align: center;
-      font-size: 1.6rem;
-      width: 100%;
-  }
-  .right #botao {
-      height: 60px;
-      position: absolute;
-      top: 82%;
-      width: 200px;
-      background-color: #edb865;
-      border-radius: 10px;
-      border: none;
-      color: white;
-      font-weight: 800;
-      font-size: 1.3rem;
-  }
-  .home-logo-container {
+    /* -- MAIN --*/
+    /* -- HOME -- */
+    .home-leftRight-container .right .top h1 {
+        text-align: center;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .right #botao {
+        height: 60px;
+        position: absolute;
+        top: 82%;
+        width: 200px;
+        background-color: #edb865;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    .home-logo-container {
+        height: 500px;
+        background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
+    }
 
-      height: 500px;
-      background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-  }
+    .home-logo {
 
-  .home-logo {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-      margin-top: 70px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-  .home-logo img{
-    width: 200px;
-  }
+    .home-logo img {
+        width: 200px;
+    }
 
-  .home-logo h1 {
-      font-size: 4.2rem;
-      text-align: center;
-      color: #edb865;
-      margin: 0;
-  }
+    .home-logo h1 {
+        font-size: 4.2rem;
+        text-align: center;
+        color: #edb865;
+        margin: 0;
+    }
 
-  .home-logo h2 {
-      text-align: center;
-      color: #edb865;
-      margin: 0;
-      letter-spacing: 5px;
-      font-size: 0.9rem;
-  }
+    .home-logo h2 {
+        text-align: center;
+        color: #edb865;
+        margin: 0;
+        letter-spacing: 5px;
+        font-size: 0.9rem;
+    }
 
     /* -- FIM HOME -- */
     /* -- SOLUCOES -- */
-   .img-shadow {
+    .img-shadow {
 
-       height: 170px;
-       top: 60px;
-       left: 45px;
-       width: 290px;
-       position: absolute;
-       background-color: #be8c3c;
-       border-radius: 25px;
-   }
+        height: 170px;
+        top: 60px;
+        left: 45px;
+        width: 290px;
+        position: absolute;
+        background-color: #be8c3c;
+        border-radius: 25px;
+    }
 
-   .solucoes-right img {
-       width: 320px;
-       margin-top: 0px;
-       border-radius: 25px;
-       position: relative;
-   }
+    .solucoes-right img {
+        width: 320px;
+        margin-top: 0px;
+        border-radius: 25px;
+        position: relative;
+    }
+
     /* -- FIM SOLUCOES -- */
-/* -- MERCADO ALVO -- */
+    /* -- MERCADO ALVO -- */
 
-.mercadoAlvo-image-shadow {
-    height: 215px;
-    top: 50px;
-    left: 40px;
-    width: 225px;
-}
+    .mercadoAlvo-image-shadow {
+        height: 215px;
+        top: 50px;
+        left: 40px;
+        width: 225px;
+    }
 
-.mercadoAlvo-imagem-container img {
-    height: 250px;
-    box-shadow: -3px -3px 30px rgb(123, 123, 123);
-}
-.mercadoAlvo-right-lista {
-    font-size: 1.1rem;
-}
-   
+    .mercadoAlvo-imagem-container img {
+        height: 250px;
+        box-shadow: -3px -3px 30px rgb(123, 123, 123);
+    }
 
-
-
-/* FIM MERCADO ALVO -- */
-
-/*-- SERVIÇOS PRESTADOS -- */
-.SP-right-image-container-two {
-
-    margin-top: 0px;
+    .mercadoAlvo-right-lista {
+        font-size: 1.1rem;
+    }
 
 
-}
 
-.SP-right {
-    /* top: 140px; */
 
-    position: relative;
-    margin-bottom: 10px;
-}
+    /* FIM MERCADO ALVO -- */
 
-/* .SP-solucoes-left h1 {
+    /*-- SERVIÇOS PRESTADOS -- */
+    .SP-right-image-container-two {
+
+        margin-top: 0px;
+    }
+
+    .SP-right {
+        /* top: 140px; */
+
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    /* .SP-solucoes-left h1 {
     color: red;
     margin-bottom: 300px;
     position: relative;
@@ -2237,28 +2414,38 @@ margin-right: 0%;
 } */
 
 .SP-right-image-container-two img {
-
     width: 350px;
     position: relative;
     border-radius: 25px;
 }
-
-.SP-image-shadow img {
-    margin-top: 20px;
-}
-
-.SP-right-image-container-two .SP-image-shadow {
-    height: 220px;
-    top: 35px;
-    left: 40px;
-    width: 330px;
-}
-
-/* -- FIM SERVIÇOS PRESTADOS --*/
+    .SP-image-shadow img {
+        margin-top: 20px;
+    }
+    .SP-right-image-container-two .SP-image-shadow {
+        height: 220px;
+        top: 35px;
+        left: 40px;
+        width: 330px;
+    }
+    /* -- FIM SERVIÇOS PRESTADOS --*/
     /* -- FIM MAIN --*/
 }
 @media screen and (max-width: 480px) {
-.img-shadow {
+body {
+    margin-top: -91px;
+    width: 140%;
+    }
+nav {
+    /* width: 100px; */
+    width: 120%;
+    display: flex;
+    align-items: center;
+}
+header{
+    width:100%;
+
+}
+    /* .img-shadow {
         height: 162px;
         top: 60px;
         left: 45px;
@@ -2275,87 +2462,92 @@ margin-right: 0%;
         position: relative;
     }
 
-        /* -- FIM MAIN -- */
-                /*-- SERVIÇOS PRESTADOS -- */
-.SP-right-image-container-two {    
-    margin-top: 0px;   
+    /* -- FIM MAIN -- */
+    /*-- SERVIÇOS PRESTADOS -- */
+    /* .SP-right-image-container-two {
+        margin-top: 0px;
     }
-.SP-right {
-    /* top: 140px;    */
-    position: relative;
-    /* margin-bottom: 90px; */
-}
-#ServicosPrestados h1{
-    margin-bottom: 15px;
-}
-.SP-leftRight-container h1 {
-    position: relative;
-    /* top: 30px; */
-}
-.SP-left-lista-container h2{
-    font-size: 1.3rem !important;
-}
-        
-.SP-left-lista-container {
-/* margin-top: 70px; */
+
+    .SP-right {
+
+        position: relative;
+
     }
-.SP-right-image-container-two img {  
-    width: 310px;
-    position: relative;
-    border-radius: 25px;
+
+    #ServicosPrestados h1 {
+        margin-bottom: 15px;
     }
-        
-.SP-image-shadow img {
-    /* margin-top: 20px; */
+
+    .SP-leftRight-container h1 {
+        position: relative;
+        // top: 30px; 
     }
-        
-.SP-right-image-container-two .SP-image-shadow {
+
+    .SP-left-lista-container h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .SP-left-lista-container {
+
+    }
+
+    .SP-right-image-container-two img {
+        width: 310px;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .SP-image-shadow img {
+
+    }
+
+    .SP-right-image-container-two .SP-image-shadow {
         height: 190px;
-        /* top: 35px; */
+
         left: 40px;
         width: 290px;
     }
-        
-/* -- FIM SERVIÇOS PRESTADOS --*/
- /* -- CO-FUNDADORES -- */
 
- .coFundadores-heading {
-     font-size: 2.6rem;
-     margin: 25px 0px;
- }
+    /* -- FIM SERVIÇOS PRESTADOS --*/
+/* -- CO-FUNDADORES -- */
+/*
+.coFundadores-heading {
+    font-size: 2.6rem;
+    margin: 25px 0px;
+}
 
- .coFundadores-imagens {
-     flex-direction: column;
-     align-items: center;
+.coFundadores-imagens {
+    flex-direction: column;
+    align-items: center;
 
- }
-
-
- .pessoa li {
-     font-size: 1.1rem;
-     margin-top: 7px;
-     width: 80%;
- }
+}
 
 
- .pessoa {
-     height: 480px;
-     width: 280px;
-     margin-bottom: 10%;
- }
+.pessoa li {
+    font-size: 1.1rem;
+    margin-top: 7px;
+    width: 80%;
+}
 
- #cofundadores {
-     padding: 5% 3%;
- }
 
- .pessoa-imagem img {
-     width: 180px;
-     height: 80%;
- }
+.pessoa {
+    height: 480px;
+    width: 280px;
+    margin-bottom: 10%;
+}
 
- .pessoa-lista ul {
-     margin: 0;
- }
+#cofundadores {
+    padding: 5% 3%;
+}
 
- /* -- FIM CO-FUNDADORES -- */
+.pessoa-imagem img {
+    width: 180px;
+    height: 80%;
+}
+
+.pessoa-lista ul {
+    margin: 0;
+}  */
+
+/* -- FIM CO-FUNDADORES -- */
 }
