@@ -3,42 +3,58 @@ let navLista = document.querySelector('.nav-lista');
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#ambienteFidigital-img .containerFidigital-img");
 let idx = 0;
+let mainScrollDiv = document.querySelector('.main-scroll-div')
+let width;
+let imageWidth = 650;
 
+
+
+console.log(mainScrollDiv)
+let i = 1;
+setInterval(() => {
+if(i < 5){
+    i++
+    mainScrollDiv.style= `background-image:url("./assets/ambiente${i}.png");`
+}
+else{
+    i = 1;
+    mainScrollDiv.style= `background-image:url("./assets/ambiente${i}.png");`
+}
+}, 2000)
+
+
+// mainScrollDiv.style= 'background-image:url("./assets/ambiente1.png");'
+
+// function rodar(){
+//    let i = 1;
+//    while(i < 5){
+//     mainScrollDiv.style= `background-image:url("./assets/ambiente${i}.png");`
+
+   
+//    }
+   
+// }
+
+// rodar()
 
 
 
 //variavel que diz se a navlinkbotoes2 está aberta
 let listaAberta = false;
-let number = 590;
-let largura = window.innerWidth;
 
 
+function scrolll(){
+    let left = document.querySelector(".scroll-images");
+    left.scrollBy(-630,0);
+
+}
+function scrollr(){
+    let right = document.querySelector(".scroll-images");
+    right.scrollBy(630,0)
+
+}
 
 
-// setInterval(() => {
-//     let largura = window.innerWidth;
-//     if(largura < 1550){
-     
-//         number = 400;
-//     }
-//     else{
-       
-//         number = 590;
-//     }
-// }, 10)
-// function carossel(){
-//     idx++;
-//     if(idx > img.length - 1 ){
-//         idx = 0;
-//     }
-//     imgs.style.transform = `translateX(${-idx * number}px)`
-// }
-
-// setInterval(carossel, 2500);
-// setInterval(() => {
-//     let largura = window.innerWidth;
-//     console.log(largura)
-// }, 25);
 
 //função que abre ou fecha a navlinkbotoes2
 navLista.addEventListener('click', () => {

@@ -41,10 +41,11 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 1300px !important;
+    width: 1550px !important;
     /* width: 100%; */
     align-items: center;
     margin: 0%;
+
 }
 .nav-image-container {
     border-radius: 50%;
@@ -60,6 +61,7 @@ nav {
      margin-left: 20px;
     font-size: 2.5rem;
 }
+
 
 .nav-image-container span {
     color: #edb865;
@@ -600,7 +602,7 @@ nav {
 
 /* -- AMBIENTE FIDIGITAL -- */
 #ambienteFidigital{
-    border: 2px solid red;
+
     height: 600px;
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
     box-sizing: border-box;
@@ -611,22 +613,56 @@ nav {
 }
 .ambienteFidigitalContainer{
     /* padding: 3% 10%; */
-    color: #D9D9D9;
+
     display: flex;
     width: 100%;
+    height: 70%;
     /* align-items: center; */
 }
 .ambienteFidigitalLeft{
-    border: 2px solid blue;
-    width: 50%;    
+
+    width: 50%; 
+
+    display: flex;
+    /* float: left; */
+    flex-direction: column;
+    justify-content: space-between;   
 }
+
 .ambienteFidigitalRight{
-    border: 2px solid green;
+
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* float: right; */
 }
+.main-scroll-div{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    border-radius: 25px;
+    background-size: cover;
+    background-image: url("./assets/ambiente1.png");
+}
+
 .ambienteFidigitalLeft h1{
     font-size: 4rem;
+    margin: 0;
 }
+.ambienteFidigitalLeft p{
+    color: #D9D9D9;
+    font-size:2rem;
+    width: 600px;
+}
+
+
+
+
 /* -- FIM AMBIENTE FIDIGITAL -- */
 
 /* -- END MAIN -- */
@@ -777,8 +813,15 @@ nav {
 
    /* -- FIM CO-FUNDADORES -- */
          /* -- AMBIENTE FIDIGITAL -- */
-    
-     
+.ambienteFidigitalLeft h1 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.7rem;
+}
          /* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
@@ -903,7 +946,22 @@ nav {
 
 /* -- FIM CO-FUNDADORES -- */
 /* -- AMBIENTE FIDIGITAL -- */
-        
+.ambienteFidigitalLeft h1 {
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.6rem;
+}
+.ambienteFidigitalContainer {
+    height: 60%;
+}
+.main-scroll-div {
+    width: 500px;
+    height: 300px;
+}
  /* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
@@ -951,6 +1009,28 @@ nav {
 
 
     /* -- FIM HOME -- */
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.4rem;
+    width: 500px;
+}
+
+.ambienteFidigitalContainer {
+    height: 55%;
+}
+
+.main-scroll-div {
+    width: 450px;
+    height: 280px;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 
 }
@@ -1094,7 +1174,31 @@ nav {
   }
 
   /* -- FIM CO-FUNDADORES -- */
-    /* -- FIM MAIN -- */
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 2.35rem;
+    margin: 0;
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+.ambienteFidigitalContainer {
+    height: 45%;
+}
+
+.main-scroll-div {
+    width: 400px;
+    height: 250px;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
+
+
+  /* -- FIM MAIN -- */
 }
 
 
@@ -1354,7 +1458,36 @@ nav {
  }
 
  /* -- FIM CO-FUNDADORES -- */
-    /* -- FIM MAIN -- */
+
+ /* -- AMBIENTE FIDIGITAL -- */
+ .ambienteFidigitalLeft h1 {
+     font-size: 2rem;
+     margin: 0;
+ }
+
+ .ambienteFidigitalLeft p {
+     color: #D9D9D9;
+     font-size: 1.1rem;
+     width: 320px;
+ }
+
+ .ambienteFidigitalContainer {
+     height: 45%;
+ }
+
+ .main-scroll-div {
+     width: 350px;
+     height: 220px;
+ }
+ #ambienteFidigital {
+
+     height: 500px;
+    
+ }
+
+ /* -- FIM AMBIENTE FIDIGITAL -- */
+
+ /* -- FIM MAIN -- */
 
 }
 
@@ -1405,6 +1538,12 @@ nav {
  }
 
  /* -- FIM CO-FUNDADORES -- */
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+/* -- FIM  AMBIENTE FIDIGITAL -- */
 
     /* -- FIM MAIN -- */
 }
@@ -1663,8 +1802,52 @@ nav {
        margin: 0;
    }
 
-   /* -- FIM CO-FUNDADORES -- */
-    /* -- FIM MAIN -- */
+   /* -- FIM CO-FUNDADORES -- */ 
+   
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 3.1rem;
+    text-align: center;
+   
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    text-align: center;
+    width: auto;
+}
+
+.ambienteFidigitalContainer {
+    height: 45%;
+}
+
+.main-scroll-div {
+    width: 500px;
+    height: 360px;
+}
+
+#ambienteFidigital {
+    height: 650px;
+    align-items: baseline;
+}
+.ambienteFidigitalContainer{
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    height: 100%;
+}
+.ambienteFidigitalLeft{
+    width: 90%;
+}
+.ambienteFidigitalRight {
+    width: 90%;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
+
+   /* -- FIM MAIN -- */
+
 }
 
 @media screen and (max-width: 780px) {
@@ -1820,9 +2003,49 @@ nav {
     }
 
     /* -- FIM SERVIÇOS PRESTADOS -- */
-    .SP-solucoes-left {
-        margin-top: 0;
-    }
+ /* -- AMBIENTE FIDIGITAL -- */
+ .ambienteFidigitalLeft h1 {
+     font-size: 3.2rem;
+     margin: 0;
+ }
+
+ .ambienteFidigitalLeft p {
+     color: #D9D9D9;
+     font-size: 1.4rem;
+
+
+ }
+
+ .ambienteFidigitalContainer {
+     height: 45%;
+ }
+
+ .main-scroll-div {
+     width: 500px;
+     height: 360px;
+ }
+
+ #ambienteFidigital {
+     height: 650px;
+     align-items: baseline;
+ }
+
+ .ambienteFidigitalContainer {
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     height: 100%;
+ }
+
+ .ambienteFidigitalLeft {
+     width: 95%;
+ }
+
+ .ambienteFidigitalRight {
+     width: 95%;
+ }
+
+ /* -- FIM AMBIENTE FIDIGITAL -- */
 
     /* -- FIM MAIN -- */
 }
@@ -1894,7 +2117,14 @@ nav {
     }
 
     /* -- FIM SERVIÇOS PRESTADOS -- */
+ /* -- AMBIENTE FIDIGITAL -- */
+ .ambienteFidigitalLeft h1 {
+     font-size: 3rem;
 
+ }
+
+
+ /* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
 
@@ -2060,12 +2290,98 @@ nav {
     /* -- FIM SERVIÇOS PRESTADOS -- */
 
     /* FIM MERCADO ALVO -- */
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 2.8rem;
+
+    margin-top: 50px;
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.4rem;
+
+
+}
+
+.ambienteFidigitalContainer {
+    height: 45%;
+}
+
+.main-scroll-div {
+    width: 450px;
+    height: 320px;
+}
+
+#ambienteFidigital {
+    height: 650px;
+    align-items: baseline;
+}
+
+.ambienteFidigitalContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ambienteFidigitalLeft {
+    width: 95%;
+}
+
+.ambienteFidigitalRight {
+    width: 95%;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 670px) {
     /* -- MAIN -- */
+/* -- AMBIENTE FIDIGITAL -- */
+    .ambienteFidigitalLeft h1 {
+        font-size: 2.5rem;
 
+    }
+
+    .ambienteFidigitalLeft p {
+        color: #D9D9D9;
+        font-size: 1.2rem;
+
+
+    }
+
+    .ambienteFidigitalContainer {
+        height: 45%;
+    }
+
+    .main-scroll-div {
+        width: 410px;
+        height: 290px;
+    }
+
+    #ambienteFidigital {
+        height: 650px;
+        align-items: baseline;
+    }
+
+    .ambienteFidigitalContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .ambienteFidigitalLeft {
+        width: 99%;
+    }
+
+    .ambienteFidigitalRight {
+        width: 99%;
+    }
+
+    /* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
 
@@ -2268,6 +2584,49 @@ nav {
 }
 
 /* -- FIM CO-FUNDADORES -- */
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 2.3rem;
+
+}
+
+.ambienteFidigitalLeft p {
+    color: #D9D9D9;
+    font-size: 1.1rem;
+
+
+}
+
+.ambienteFidigitalContainer {
+    height: 45%;
+}
+
+.main-scroll-div {
+    width: 410px;
+    height: 290px;
+}
+
+#ambienteFidigital {
+    height: 650px;
+    align-items: baseline;
+}
+
+.ambienteFidigitalContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ambienteFidigitalLeft {
+    width: 100%;
+}
+
+.ambienteFidigitalRight {
+    width: 100%;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN -- */
 }
 
@@ -2428,6 +2787,48 @@ nav {
         width: 330px;
     }
     /* -- FIM SERVIÇOS PRESTADOS --*/
+/* -- AMBIENTE FIDIGITAL -- */
+.ambienteFidigitalLeft h1 {
+    font-size: 2.1rem;
+
+}
+
+.ambienteFidigitalLeft p {
+    font-size: 1.1rem;
+
+
+}
+
+.ambienteFidigitalContainer {
+    height: 45%;
+}
+
+.main-scroll-div {
+    width: 410px;
+    height: 290px;
+}
+
+#ambienteFidigital {
+    height: 600px;
+    align-items: baseline;
+}
+
+.ambienteFidigitalContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ambienteFidigitalLeft {
+    width: 100%;
+}
+
+.ambienteFidigitalRight {
+    width: 100%;
+}
+
+/* -- FIM AMBIENTE FIDIGITAL -- */
     /* -- FIM MAIN --*/
 }
 @media screen and (max-width: 480px) {
@@ -2443,7 +2844,6 @@ nav {
 }
 header{
     width:100%;
-
 }
     /* .img-shadow {
         height: 162px;
