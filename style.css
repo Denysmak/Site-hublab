@@ -365,7 +365,7 @@ nav {
     /* display: flex; */
     align-items: center;
     background-color: rgb(238, 238, 238);
-    border: 1px solid black;
+
 }
 .mercadoAlvo-imagem-container {
     position: relative;
@@ -1613,6 +1613,7 @@ nav {
     left: -50px;
     top: 10px;
     border-radius: 55px;
+
 }
 
 .ondeEstamosImgDois {
