@@ -9,7 +9,7 @@ body {
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 8000px;
+    /* height: 8000px; */
     width: 100%;
     /* min-width: 100%; */
 }
@@ -36,7 +36,7 @@ header {
     position: fixed;
     height: 90px; 
     background: linear-gradient(90deg, rgba(50, 73, 79, 2) 0%, rgba(0, 0, 0, 1) 100%);
-    z-index: 2;
+    z-index: 4;
 }
 nav {
     display: flex;
@@ -661,9 +661,97 @@ nav {
 }
 
 
-
-
 /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos{
+    padding: 3% 10%;
+}
+#ondeEstamos h1{
+    font-size: 4rem;
+}
+#ondeEstamos p {
+    font-size: 1.5rem;
+    width: 900px;
+}
+.ondeEstamosImgContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.ondeEstamosImg {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.ondeEstamosImgUm {
+    width: 480px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 480px;
+    background-color: #be8c3c;
+    height: 330px;
+    position: absolute;
+    left: -120px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 250px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 250px;
+    background-color: #be8c3c;
+    height: 385px;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 480px;
+    height: 300px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+    background-size: cover;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 480px;
+    background-color: #be8c3c;
+    height: 310px;
+    position: absolute;
+    left: -120px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 100px;
+    margin-top: 30px
+}
+
+.portoLogo {
+    width: 200px;
+    margin-top: 30px;
+}
+
+
+/* FIM ONDE ESTAMOS */
+
 
 /* -- END MAIN -- */
 @media screen and (max-width: 1850px) {
@@ -823,6 +911,80 @@ nav {
     font-size: 1.7rem;
 }
          /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos {
+    padding: 3% 10%;
+}
+
+#ondeEstamos h1 {
+    font-size: 3.5rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.4rem;
+    width: 800px;
+}
+.ondeEstamosImgUm {
+    width: 440px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 440px;
+    background-color: #be8c3c;
+    height: 300px;
+    position: absolute;
+    left: -100px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 220px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 225px;
+    background-color: #be8c3c;
+    height: 335px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 440px;
+    height: 280px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 440px;
+    background-color: #be8c3c;
+    height: 290px;
+    position: absolute;
+    left: -100px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 90px;
+    margin-top: 25px
+}
+
+.portoLogo {
+    width: 180px;
+    margin-top: 25px;
+}
+
+
+/* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 }
 
@@ -963,6 +1125,82 @@ nav {
     height: 300px;
 }
  /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos {
+    padding: 3% 10%;
+}
+
+#ondeEstamos h1 {
+    font-size: 3.3rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.4rem;
+    width: 800px;
+}
+
+.ondeEstamosImgUm {
+    width: 420px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 420px;
+    background-color: #be8c3c;
+    height: 290px;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 200px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 200px;
+    background-color: #be8c3c;
+    height: 300px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 420px;
+    height: 270px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+   
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 420px;
+    background-color: #be8c3c;
+    height: 280px;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 85px;
+    margin-top: 20px
+}
+
+.portoLogo {
+    width: 160px;
+    margin-top: 25px;
+}
+
+
+/* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 }
 
@@ -1031,6 +1269,155 @@ nav {
 }
 
 /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos {
+
+    padding: 3% 10%;
+}
+
+#ondeEstamos h1 {
+    font-size: 3.3rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.4rem;
+    width: 800px;
+}
+
+.ondeEstamosImgUm {
+    width: 420px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 420px;
+    background-color: #be8c3c;
+    height: 290px;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 200px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 200px;
+    background-color: #be8c3c;
+    height: 300px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 400px;
+    height: 260px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 420px;
+    background-color: #be8c3c;
+    height: 310px;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 85px;
+    margin-top: 20px
+}
+
+.portoLogo {
+    width: 160px;
+    margin-top: 25px;
+}
+
+/* ONDE ESTAMOS */
+/* #ondeEstamos {
+    padding: 3% 10%;
+}
+
+#ondeEstamos h1 {
+    font-size: 3.3rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.4rem;
+    width: 800px;
+}
+
+.ondeEstamosImgUm {
+    width: 400px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 400px;
+    background-color: #be8c3c;
+    height: 275px;
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 180px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 180px;
+    background-color: #be8c3c;
+    height: 270px;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 400px;
+    height: 260px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 390px;
+    background-color: #be8c3c;
+    height: 270px;
+    position: absolute;
+    left: -70px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 80px;
+    margin-top: 20px
+}
+
+.portoLogo {
+    width: 150px;
+    margin-top: 25px;
+}
+ */
+
+/* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 
 }
@@ -1197,6 +1584,84 @@ nav {
 
 /* -- FIM AMBIENTE FIDIGITAL -- */
 
+
+
+/* ONDE ESTAMOS */
+#ondeEstamos {
+
+    padding: 3% 8%;
+}
+
+#ondeEstamos h1 {
+    font-size: 3.1rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.3rem;
+    width: 800px;
+}
+
+.ondeEstamosImgUm {
+    width: 330px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 335px;
+    background-color: #be8c3c;
+    height: 230px;
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 150px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 150px;
+    background-color: #be8c3c;
+    height: 225px;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 335px;
+    height: 230px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 335px;
+    background-color: #be8c3c;
+    height: 235px;
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 75px;
+    margin-top: 20px
+}
+
+.portoLogo {
+    width: 130px;
+    margin-top: 25px;
+}
+
+
+/* FIM ONDE ESTAMOS */
 
   /* -- FIM MAIN -- */
 }
@@ -1486,7 +1951,81 @@ nav {
  }
 
  /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos {
+  padding: 3% 6%;
+}
 
+#ondeEstamos h1 {
+    font-size: 2.8rem;
+}
+
+#ondeEstamos p {
+    font-size: 1.2rem;
+    width: 600px;
+}
+
+.ondeEstamosImgUm {
+    width: 285px;
+}
+
+.ondeEstamosImgYellowUm {
+    width: 285px;
+    background-color: #be8c3c;
+    height: 200px;
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgDois {
+    width: 130px;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowDois {
+    width: 130px;
+    background-color: #be8c3c;
+    height: 190px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgTres {
+    width: 285px;
+    height: 200px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 285px;
+    background-color: #be8c3c;
+    height: 205px;
+    position: absolute;
+    left: -20px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.hublabLogo {
+    width: 75px;
+    margin-top: 20px
+}
+
+.portoLogo {
+    width: 130px;
+    margin-top: 25px;
+}
+
+
+/* FIM ONDE ESTAMOS */
  /* -- FIM MAIN -- */
 
 }
@@ -1845,7 +2384,52 @@ nav {
 }
 
 /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+#ondeEstamos {
+    padding: 3% 10%;
+}
+.ondeEstamosImg{
+    margin-bottom: 0px;
+}
+#ondeEstamos h1 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+#ondeEstamos p {
+    font-size: 1.4rem;
+   
+    width: 550px;
+        text-align: center;
+}
+.ondeEstamosImg1{
+    display: none;
+}
+.ondeEstamosImg2 {
+    display: none;
+}
+.ondeEstamosImgTres {
+    width: 455px;
+    height: 300px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+.ondeEstamosImgYellowTres {
+    width: 450px;
+    background-color: #be8c3c;
+    height: 310px;
+    position: absolute;
+    left: -100px;
+    top: 15px;
+    border-radius: 55px;
+}
+.portoLogo {
 
+    width: 230px;
+    margin-top: 40px;
+}
+/* FIM ONDE ESTAMOS */
    /* -- FIM MAIN -- */
 
 }
@@ -2263,8 +2847,6 @@ nav {
         padding: 10% 5%;
     }
 
-    .SP-text {}
-
     .SP-right-image-container-two img {
 
         width: 450px;
@@ -2334,6 +2916,52 @@ nav {
 }
 
 /* -- FIM AMBIENTE FIDIGITAL -- */
+
+/* ONDE ESTAMOS */
+
+#ondeEstamos p {
+    font-size: 1.2rem;
+    width: 500px;
+    text-align: center;
+}
+#ondeEstamos {
+    padding: 3% 10%;
+}
+
+
+
+#ondeEstamos h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ondeEstamosImgTres {
+    width: 425px;
+    height: 290px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 430px;
+    background-color: #be8c3c;
+    height: 300px;
+    position: absolute;
+    left: -90px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.portoLogo {
+
+    width: 210px;
+    margin-top: 30px;
+}
+
+
+/* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 }
 
@@ -2382,45 +3010,103 @@ nav {
     }
 
     /* -- FIM AMBIENTE FIDIGITAL -- */
+/* ONDE ESTAMOS */
+
+#ondeEstamos p{
+    font-size: 1.2rem;
+    width: 450px;
+    text-align: center;
+}
+
+#ondeEstamos {
+    padding: 3% 10%;
+}
+
+
+
+#ondeEstamos h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.ondeEstamosImgTres {
+    width: 425px;
+    height: 290px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 430px;
+    background-color: #be8c3c;
+    height: 300px;
+    position: absolute;
+    left: -90px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.portoLogo {
+
+    width: 200px;
+    margin-top: 30px;
+}
+
+
+/* FIM ONDE ESTAMOS */
+
     /* -- FIM MAIN -- */
 }
 
 @media screen and (max-width: 590px) {
     /* -- MAIN -- */
-    /* -- SERVIÇOS PRESTADOS -- */
+/*ONDE ESTAMOS */
+#ondeEstamos p {
+        font-size: 1.2rem;
+        width: 420px;
+        text-align: center;
+    }
 
-    /*
-    .SP-right-image-container-one img {
-
-        width: 170px;
-        position: relative;
-        border-radius: 25px;
+    #ondeEstamos {
+        padding: 3% 10%;
     }
 
 
 
-    .SP-right-image-container-one .SP-image-shadow {
-        height: 150px;
-        top: 35px;
-        left: 40px;
-        width: 145px;
+    #ondeEstamos h1 {
+        font-size: 2.8rem;
+        text-align: center;
     }
 
-    .SP-right-image-container-two img {
-
-        width: 230px;
-        position: relative;
-        border-radius: 25px;
+    .ondeEstamosImgTres {
+        width:380px;
+        height: 270px;
+        background-image: url(./assets/porto3.jpg);
+        background-position: center;
+        z-index: 2;
+        border-radius: 55px;
     }
 
-    .SP-right-image-container-two .SP-image-shadow {
-        height: 135px;
-        top: 35px;
-        left: 40px;
-        width: 205px;
-    } */
+    .ondeEstamosImgYellowTres {
+        width: 380px;
+        background-color: #be8c3c;
+        height: 280px;
+        position: absolute;
+        left: -70px;
+        top: 15px;
+        border-radius: 55px;
+    }
 
-    /* -- FIM SERVIÇOS PRESTADOS -- */
+    .portoLogo {
+
+        width: 180px;
+        margin-top: 30px;
+    }
+
+
+    /* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 }
 
@@ -2627,6 +3313,51 @@ nav {
 }
 
 /* -- FIM AMBIENTE FIDIGITAL -- */
+/*ONDE ESTAMOS */
+#ondeEstamos p {
+    font-size: 1.2rem;
+    width: 410px;
+    text-align: center;
+}
+
+#ondeEstamos {
+    padding: 3% 10%;
+}
+
+
+
+#ondeEstamos h1 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.ondeEstamosImgTres {
+    width: 340px;
+    height: 250px;
+    background-image: url(./assets/porto3.jpg);
+    background-position: center;
+    z-index: 2;
+    border-radius: 55px;
+}
+
+.ondeEstamosImgYellowTres {
+    width: 340px;
+    background-color: #be8c3c;
+    height: 260px;
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    border-radius: 55px;
+}
+
+.portoLogo {
+
+    width: 180px;
+    margin-top: 30px;
+}
+
+
+/* FIM ONDE ESTAMOS */
     /* -- FIM MAIN -- */
 }
 
