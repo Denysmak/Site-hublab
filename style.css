@@ -1324,11 +1324,11 @@ nav {
 }
 
 .ondeEstamosImgYellowTres {
-    width: 420px;
+    width: 400px;
     background-color: #be8c3c;
-    height: 310px;
+    height: 270px;
     position: absolute;
-    left: -90px;
+    left: -80px;
     top: 10px;
     border-radius: 55px;
 }
